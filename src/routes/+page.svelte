@@ -1,34 +1,37 @@
 <div class="layout">
-    <div class="container">
         <header id="home">
-            <h1>Joseph Chauvin</h1>
-            <h2>Composer</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                        <span>&nbsp;&nbsp;&nbsp;|</span>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                        <span>&nbsp;&nbsp;&nbsp;|</span>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                            <span>&nbsp;&nbsp;&nbsp;|</span>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                            <span>&nbsp;&nbsp;&nbsp;|</span>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>JOSEPH CHAUVIN</h1>
+            <h2>Video Game Composer</h2>
         </header>
-        <section id="demos">
-            <iframe title="Mega Man Inspired Music" width="700" height="393.75" src="https://www.youtube.com/watch?v=ZJcMD57075o"></iframe>
-        </section>
-        <section id="about">
+        <div class="container">
+            <section id="demos" class="demos">
+                <!-- <iframe title="Mega Man Inspired Music" width="700" height="393.75" src="https://www.youtube.com/watch?v=ZJcMD57075o"></iframe> -->
+                <iframe width="100%" height="515" src="https://www.youtube.com/embed/ZJcMD57075o?si=f_0gTA4hlY3ISJb2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <section id="about">
+                
+            </section>
+            <section id="contact">
             
-        </section>
-        <section id="contact">
-        
-        </section>
-    </div>
+            </section>
+        </div>
 </div>
 
 <style>
@@ -36,11 +39,15 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
+        background: var(--gray-1);
+        color: var(--gray-12);
+        min-height: 100dvh;
     }
     
     .container {
-        max-inline-size: 700px;
+        max-inline-size: 914px;
+        width: 100%;
     }
 
     header {
@@ -49,18 +56,31 @@
         align-items: center;
         padding: 2rem;
         gap: 1rem;
+        width: 100%;
+        background: var(--indigo-3);
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     h1 {
         font-family: "KronaOne", "inter";
         font-size: 3rem;
+        /* font-size: 3cqw; */
         margin: 0;
         letter-spacing: -4.5px;
-        color: black;
+        color: var(--gray-12);
+        font-style: italic;
     }
 
     h2 {
-        font-family: "Gurmukhi MT";
+        font-family: "Gurmukhi MT", "inter";
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
     }
 
     ul {
@@ -74,10 +94,19 @@
 
     a {
         text-decoration: none;
-        color: black;
+        /* color: var(--blue-9); */
+        color: var(--gray-12);
     }
+    
+    /* li span {
+        color: var(--blue-9);
+    } */
 
     a:hover {
         text-decoration: underline;
+    }
+
+    .demos {
+        padding-block: 64px;
     }
 </style>
