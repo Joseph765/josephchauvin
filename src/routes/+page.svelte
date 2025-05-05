@@ -7,7 +7,7 @@
 <div class="layout">
     <!-- <img alt="Elektron Digitone" src="/src/lib/assets/Digitone-Red.JPG" /> -->
     <!-- <img alt="Elektron Digitone" src="/src/lib/assets/Digitone-Digitakt.JPG" /> -->
-    <img alt="Elektron Digitone" src="/src/lib/assets/unsplash-studio.jpg" />
+    <img alt="Elektron Digitone" src="/unsplash-studio.jpg" />
     <div class="overlay"></div>
     <div class="title">
         <h1>Joseph Chauvin</h1>
