@@ -1,7 +1,7 @@
 <section id="contact">
     <div class="container">
         <h3>Contact</h3>
-        <p>Joseph.chauvin102@gmail.com</p>
+        <a href="mailto:joseph.chauvin102@gmail.com">Joseph.chauvin102@gmail.com</a>
     </div>
 </section>
 
@@ -28,13 +28,19 @@
         padding-inline: 2rem;
     }
 
-    p {
-        font-family: "Roboto Slab", sans-serif;
+    a {
+        font-family: "Roboto", sans-serif;
         font-size: 1rem;
         font-weight: 350;
-        color: #d5d6d8;
+        /* color: #d5d6d8; */
+        color: var(--indigo-11);
         letter-spacing: 1px;
         text-align: center;
         padding-bottom: 1rem;
+        /* text-decoration: none; */
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 </style>
