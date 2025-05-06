@@ -15,7 +15,7 @@
     </div>
     <div class="arrow-down">
         <button aria-label="scroll down" onclick={() => scrollTo("music")}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-down-icon lucide-move-down"><path d="M8 18L12 22L16 18"/><path d="M12 2V22"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-down-icon lucide-move-down"><path d="M8 18L12 22L16 18"/><path d="M12 2V22"/></svg>
         </button>
     </div>
 </div>
@@ -57,6 +57,9 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .overlay {
@@ -86,7 +89,7 @@
 
     h1 {
         font-family: "Roboto Slab", sans-serif;
-        font-size: clamp(2.5rem, 5vw + 1.5rem, 5rem);
+        font-size: clamp(2.5rem, 8vw + 1.5rem, 5rem);
         font-weight: 315;
         margin: 0;
         letter-spacing: -3.5px;
