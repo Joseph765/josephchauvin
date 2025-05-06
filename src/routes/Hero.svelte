@@ -5,7 +5,7 @@
 <div class="title">
     <h1>Music Composer For 2D Action Games</h1>
     <!-- <h2>Video Game Composer</h2> -->
-    <!-- <button>Click Here</button> -->
+    <button>Hire Joseph</button>
 </div>
 <!-- <div class="arrow-down">
     <button aria-label="scroll down" onclick={() => scrollTo("music")}>
@@ -57,6 +57,25 @@
         color: var(--gray-12);
         max-inline-size: 720px;
         line-height: 1.2;
+    }
+
+    button {
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 415;
+        height: 3rem;
+        /* letter-spacing: -0.5px; */
+        padding-inline: 1rem;
+        border-radius: 2px;
+        background: var(--indigo-9);
+        border: 1px solid transparent;
+        color: var(--gray-12);
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: none;
+        border: 1px solid var(--indigo-9);
     }
 /* 
     h2 {

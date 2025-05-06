@@ -44,6 +44,10 @@ body {
     color-scheme: dark;
 }
 
+::selection {
+    background: var(--indigo-5);
+}
+
 h1,
 h2,
 h3,
