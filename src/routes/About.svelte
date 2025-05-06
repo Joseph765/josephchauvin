@@ -18,6 +18,7 @@
     img {
         height: 338px;
         /* width: 100%; */
+        margin: auto;
     }
 
     .container {
@@ -35,6 +36,7 @@
         flex-wrap: wrap;
         gap: 2rem;
         align-items: start;
+        justify-content: center;
     }
 
     h3 {
