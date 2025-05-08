@@ -16,9 +16,10 @@
     }
 
     img {
-        height: 338px;
-        /* width: 100%; */
+        /* height: 338px; */
+        max-width: 100%;
         margin: auto;
+        border-radius: 2px;
     }
 
     .container {

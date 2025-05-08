@@ -1,35 +1,85 @@
+<script>
+    let showMenu = false;
+</script>
+
 <nav>
-    <ul>
+    <a class="logo" href="/">Joseph Chauvin</a>
+    <ul class="desktop-links">
         <li>
-            <a class="logo" href="/">Joseph Chauvin</a>
+            <a href="#music">
+                Music
+            </a>
         </li>
-        <div class="links">
-            <li>
-                <a href="#music">
-                    Music
-                </a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#contact">
-                    Contact
-                </a>
-            </li>
-        </div>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#contact">
+                Contact
+            </a>
+        </li>
     </ul>
+    <button aria-label="Navigation menu" class="hamburger" onclick={() => showMenu = !showMenu}>
+        {#if showMenu}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        {:else}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+        {/if}
+    </button>
+    {#if showMenu}
+        <div class="mobile-menu">
+            <ul class="mobile-links">
+                <li>
+                    <a href="#music" onclick={() => showMenu = false}>
+                        Music
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" onclick={() => showMenu = false}>About</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick={() => showMenu = false}>Contact</a>
+                </li>
+            </ul>
+        </div>
+    {/if}
 </nav>
 
 <style>
     nav {
-        /* position: sticky;
-        top: 0;
-        left: 0; */
         width: 100%;
         z-index: 9999;
-        /* background: var(--gray-5); */
-        /* border-bottom: 1px solid var(--gray-6); */
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--gray-12);
+        padding-inline-end: 1rem;
+    }
+
+    .mobile-menu {
+        background: var(--gray-4);
+        border: 1px solid var(--gray-6);
+        border-radius: 2px;
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+        padding: 2rem 1rem;
+        width: 10rem;
+    }
+
+    .mobile-links {
+        display: flex;
+        gap: 1.25rem;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
 
     ul {
@@ -37,7 +87,6 @@
         align-items: center;
         justify-content: space-between;
         list-style-type: none;
-        padding-inline: 2rem;
     }
 
     a {
@@ -51,7 +100,7 @@
         text-decoration: underline;
     }
 
-    .links {
+    .desktop-links {
         display: flex;
         align-items: center;
         gap: 2rem;
@@ -65,5 +114,17 @@
         letter-spacing: -0.5px;
         color: var(--gray-12);
         max-inline-size: 700px;
+        white-space: nowrap;
+        padding-inline-start: 1rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .desktop-links {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+        }
     }
 </style>

@@ -12,24 +12,31 @@
 </svelte:head>
 
 <div class="layout">
-    <Nav />
-    <Hero />
+    <header>
+        <Nav />
+        <Hero />
+    </header>
+    <div class="divider"></div>
+    <Music />
+    <div class="divider"></div>
+    <About />
+    <div class="divider"></div>
+    <Contact />
 </div>
-<div class="divider"></div>
-<Music />
-<div class="divider"></div>
-<About />
-<div class="divider"></div>
-<Contact />
 
 <style>
     .layout {
+        color: var(--gray-12);
+        overflow: hidden;
+    }
+    
+    header {
         display: flex;
         align-items: center;
         flex-direction: column;
-        color: var(--gray-12);
         height: 100vh;
-        width: 100vw;
+        max-height: 100vh;
+        /* width: 100%; */
     }
 
     .divider {

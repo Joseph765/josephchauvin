@@ -5,7 +5,8 @@
 <div class="title">
     <h1>Music Composer For 2D Action Games</h1>
     <!-- <h2>Video Game Composer</h2> -->
-    <button>Hire Joseph</button>
+    <!-- <button>Hire Joseph</button> -->
+    <a class="button" href="mailto:joseph.chauvin102@gmail.com">Contact</a>
 </div>
 <!-- <div class="arrow-down">
     <button aria-label="scroll down" onclick={() => scrollTo("music")}>
@@ -41,6 +42,7 @@
         align-items: center;
         flex-direction: column;
         gap: 16px;
+        padding-inline: 1rem;
     }
 
     /* .arrow-down {
@@ -53,29 +55,35 @@
         font-size: clamp(2.5rem, 4.5vw + 1.5rem, 5rem);
         font-weight: 315;
         margin: 0;
-        letter-spacing: -3.5px;
+        letter-spacing: -2.5px;
         color: var(--gray-12);
         max-inline-size: 720px;
         line-height: 1.2;
     }
 
-    button {
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-family: "Roboto Slab", sans-serif;
         font-size: 1.25rem;
         font-weight: 415;
         height: 3rem;
         /* letter-spacing: -0.5px; */
-        padding-inline: 1rem;
+        padding-inline: 2rem;
+        padding-bottom: 3px;
         border-radius: 2px;
         background: var(--indigo-9);
         border: 1px solid transparent;
         color: var(--gray-12);
         cursor: pointer;
+        text-decoration: none;
     }
 
-    button:hover {
-        background: none;
+    .button:hover {
+        background: var(--gray-1);
         border: 1px solid var(--indigo-9);
+        /* color: var(--indigo-12); */
     }
 /* 
     h2 {
