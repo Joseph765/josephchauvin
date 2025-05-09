@@ -1,33 +1,4 @@
 @font-face {
-    font-family: "KronaOne";
-    src: url("/src/lib/assets/KronaOne-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url("/src/lib/assets/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url("/src/lib/assets/Montserrat/Montserrat-Bold.ttf") format("truetype");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url("/src/lib/assets/Montserrat/Montserrat-Medium.ttf") format("truetype");
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url("/src/lib/assets/Montserrat/Montserrat-Regular.ttf") format("truetype");
-    font-weight: 400;
-}
-
-@font-face {
     font-family: "Roboto Slab";
     src: url("/src/lib/assets/RobotoSlab-VariableFont_wght.ttf") format("truetype");
 }
@@ -61,6 +32,8 @@ span {
 }
 
 :root {
+    --font-family: "Roboto Slab", Georgia, Times, "Times New Roman", serif;
+    
 	--gray-1: #111113;
 	--gray-2: #18191b;
 	--gray-3: #212225;

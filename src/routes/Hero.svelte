@@ -36,13 +36,17 @@
 
     .title {
         position: absolute;
-        top: calc(50% - 102px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        overflow: hidden;
         text-align: center;
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 16px;
-        padding-inline: 1rem;
+        /* padding-inline: 1rem; */
     }
 
     /* .arrow-down {
@@ -51,13 +55,13 @@
     } */
 
     h1 {
-        font-family: "Roboto Slab", sans-serif;
+        font-family: var(--font-family);
         font-size: clamp(2.5rem, 4.5vw + 1.5rem, 5rem);
         font-weight: 315;
         margin: 0;
         letter-spacing: -2.5px;
         color: var(--gray-12);
-        max-inline-size: 720px;
+        max-inline-size: 820px;
         line-height: 1.2;
     }
 
@@ -65,7 +69,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: "Roboto Slab", sans-serif;
+        font-family: var(--font-family);
         font-size: 1.25rem;
         font-weight: 415;
         height: 3rem;
@@ -80,14 +84,16 @@
         text-decoration: none;
     }
 
-    .button:hover {
-        background: var(--gray-1);
-        border: 1px solid var(--indigo-9);
-        /* color: var(--indigo-12); */
+    @media (pointer: fine) {
+        .button:hover {
+            background: var(--gray-1);
+            border: 1px solid var(--indigo-9);
+        }
     }
+
 /* 
     h2 {
-        font-family: "Roboto Slab", sans-serif;
+        font-family: var(--font-family);
         font-size: 1rem;
         font-weight: 450;
         color: #d5d6d8;

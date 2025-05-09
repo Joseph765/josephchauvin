@@ -2,7 +2,7 @@
     let showMenu = false;
 </script>
 
-<nav>
+<!-- <nav>
     <a class="logo" href="/">Joseph Chauvin</a>
     <ul class="desktop-links">
         <li>
@@ -43,10 +43,27 @@
             </ul>
         </div>
     {/if}
-</nav>
+</nav> -->
+
+<a class="temp-logo" href="/">Joseph Chauvin</a>
 
 <style>
-    nav {
+    .temp-logo {
+        z-index: 9999;
+        padding: 1rem;
+        margin: auto;
+        font-family: var(--font-family);
+        font-size: 1.5rem;
+        font-weight: 315;
+        margin: 0;
+        letter-spacing: -0.5px;
+        color: var(--gray-12);
+        max-inline-size: 700px;
+        white-space: nowrap;
+        padding-inline-start: 1rem;
+    }
+
+    /* nav {
         width: 100%;
         z-index: 9999;
         display: flex;
@@ -87,27 +104,30 @@
         align-items: center;
         justify-content: space-between;
         list-style-type: none;
-    }
+    } */
 
     a {
-        font-family: "Roboto Slab", sans-serif;
+        font-family: var(--font-family);
         text-decoration: none;
         color: var(--gray-12);
         font-size: 1rem;
     }
 
-    a:hover {
-        text-decoration: underline;
+    @media (pointer: fine) {
+        a:hover {
+            text-decoration: underline;
+        }
     }
 
-    .desktop-links {
+
+    /* .desktop-links {
         display: flex;
         align-items: center;
         gap: 2rem;
     }
 
     .logo {
-        font-family: "Roboto Slab", sans-serif;
+        font-family: var(--font-family);
         font-size: 1.5rem;
         font-weight: 315;
         margin: 0;
@@ -116,9 +136,9 @@
         max-inline-size: 700px;
         white-space: nowrap;
         padding-inline-start: 1rem;
-    }
+    } */
 
-    @media only screen and (max-width: 700px) {
+    /* @media only screen and (max-width: 700px) {
         .desktop-links {
             display: none;
         }
@@ -126,5 +146,5 @@
         .hamburger {
             display: block;
         }
-    }
+    } */
 </style>

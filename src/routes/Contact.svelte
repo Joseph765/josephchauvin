@@ -12,7 +12,7 @@
     }
 
     h3 {
-        font-family: "Roboto Slab", sans-serif;
+        font-family: var(--font-family);
         font-size: 2rem;
         font-weight: 350;
         color: #d5d6d8;
@@ -29,7 +29,7 @@
     }
 
     a {
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-family);
         font-size: 1rem;
         font-weight: 350;
         /* color: #d5d6d8; */
@@ -40,7 +40,10 @@
         /* text-decoration: none; */
     }
 
-    a:hover {
-        text-decoration: underline;
+    @media (pointer: fine) {
+        a:hover {
+            text-decoration: underline;
+        }
     }
+
 </style>

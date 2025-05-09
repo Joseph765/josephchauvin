@@ -1,5 +1,5 @@
 <script>
-    import Music from "./Music.svelte";
+    import Demos from "./Demos.svelte";
     import Contact from "./Contact.svelte";
     import Nav from "./Nav.svelte";
     import Hero from "./Hero.svelte";
@@ -17,9 +17,9 @@
         <Hero />
     </header>
     <div class="divider"></div>
-    <Music />
-    <div class="divider"></div>
-    <About />
+    <Demos />
+    <!-- <div class="divider"></div>
+    <About /> -->
     <div class="divider"></div>
     <Contact />
 </div>
@@ -35,11 +35,17 @@
         align-items: center;
         flex-direction: column;
         height: 100vh;
-        max-height: 100vh;
+        /* max-height: 100vh; */
         /* width: 100%; */
     }
 
     .divider {
         border-top: 1px solid var(--gray-6);
+    }
+
+    @media (pointer: coarse) {
+        header {
+            height: 100svh !important;
+        }
     }
 </style>

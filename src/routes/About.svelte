@@ -41,7 +41,7 @@
     }
 
     h3 {
-        font-family: "Roboto Slab", sans-serif;
+        font-family: var(--font-family);
         font-size: 2rem;
         font-weight: 350;
         color: #d5d6d8;
@@ -52,7 +52,7 @@
     }
 
     p {
-        font-family: "Roboto Slab", sans-serif;
+        font-family: var(--font-family);
         font-size: 1rem;
         font-weight: 350;
         color: #d5d6d8;
