@@ -1,16 +1,16 @@
-<section id="contact">
+<script>
+    import { Divider, Section } from "$lib/components";
+</script>
+
+<Divider />
+<Section id="contact">
     <div class="container">
         <h3>Contact</h3>
         <a href="mailto:joseph.chauvin102@gmail.com">Joseph.chauvin102@gmail.com</a>
     </div>
-</section>
+</Section>
 
 <style>
-    section {
-        padding-block: 6rem;
-        background-color: var(--gray-1);
-    }
-
     h3 {
         font-family: var(--font-family);
         font-size: 2rem;

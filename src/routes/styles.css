@@ -85,4 +85,7 @@ span {
     --cyan-10: #23afd0;
     --cyan-11: #4ccce6;
     --cyan-12: #b6ecf7;
+
+    --color-background: var(--gray-1);
+    --color-text: var(--gray-12);
 }

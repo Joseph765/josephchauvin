@@ -1,4 +1,9 @@
-<section id="music">
+<script>
+    import { Divider, Section } from "$lib/components";
+</script>
+
+<Divider />
+<Section id="music">
     <div class="container is-size-l">
         <h3>Demos</h3>
         <div class="songs">
@@ -28,14 +33,9 @@
             <iframe title="Kinect EP" style="border-radius: 12px;" src="https://open.spotify.com/embed/album/2KXETLWscghzck2sIuHrMT?utm_source=generator" width="100%" height="420" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div> -->
     </div>
-</section>
+</Section>
 
 <style>
-    section {
-        padding-block: 3rem;
-        background-color: var(--gray-1);
-    }
-
     h3 {
         font-family: var(--font-family);
         font-size: 2rem;
@@ -81,7 +81,7 @@
     }
 
     h4 {
-        color: var(--gray-12);
+        color: var(--color-text);
         font-family: var(--font-family);
         font-size: 1.25rem;
         font-weight: 350;

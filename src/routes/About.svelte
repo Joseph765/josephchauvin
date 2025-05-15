@@ -1,22 +1,28 @@
-<section id="about">
+<script>
+    import { Divider, Section } from "$lib/components";
+</script>
+
+<Divider />
+<Section id="about">
     <div class="container is-size-l">
         <h3>About</h3>
         <div class="split">
             <img alt="Joseph Chauvin next to a creek" src="/Creek.jpg" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="text-content">
+                <p>Hi! I'm Joseph Chauvin, a music composer for 2D action games based in Asheville, North Carolina.</p>
+                <br />
+                <p>I have a deep passion for crafting retro-styled action music that empowers players to overcome any challenge.</p>
+                <br />
+                <p>When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</p>
+            </div>
         </div>
     </div>
-</section>
+</Section>
 
 
 <style>
-    section {
-        padding-block: 6rem;
-        background-color: var(--gray-1);
-    }
-
     img {
-        /* height: 338px; */
+        height: 338px;
         max-width: 100%;
         margin: auto;
         border-radius: 2px;
@@ -37,7 +43,7 @@
         flex-wrap: wrap;
         gap: 2rem;
         align-items: start;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     h3 {
@@ -57,7 +63,30 @@
         font-weight: 350;
         color: #d5d6d8;
         letter-spacing: 1px;
-        padding-bottom: 1rem;
         max-inline-size: 67ch;
+        line-height: 1.65;
+        /* text-align: center; */
+    }
+
+    @media only screen and (max-width: 1154px) {
+        img {
+            height: auto;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .split {
+            flex-direction: column;
+            gap: none;
+            justify-content: center;
+        }
+
+        .text-content {
+            margin: auto;
+        }
+
+        p {
+            text-align: center;
+        }
     }
 </style>

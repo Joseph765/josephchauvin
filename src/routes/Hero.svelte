@@ -60,7 +60,7 @@
         font-weight: 315;
         margin: 0;
         letter-spacing: -2.5px;
-        color: var(--gray-12);
+        color: var(--color-text);
         max-inline-size: 820px;
         line-height: 1.2;
     }
@@ -79,14 +79,14 @@
         border-radius: 2px;
         background: var(--indigo-9);
         border: 1px solid transparent;
-        color: var(--gray-12);
+        color: var(--color-text);
         cursor: pointer;
         text-decoration: none;
     }
 
     @media (pointer: fine) {
         .button:hover {
-            background: var(--gray-1);
+            background: var(--color-background);
             border: 1px solid var(--indigo-9);
         }
     }
@@ -105,7 +105,7 @@
         appearance: none;
         background: none;
         border: none;
-        color: var(--gray-12);
+        color: var(--color-text);
         cursor: pointer;
     } */
 </style>

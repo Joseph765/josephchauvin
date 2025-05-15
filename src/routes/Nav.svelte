@@ -57,7 +57,7 @@
         font-weight: 315;
         margin: 0;
         letter-spacing: -0.5px;
-        color: var(--gray-12);
+        color: var(--color-text);
         max-inline-size: 700px;
         white-space: nowrap;
         padding-inline-start: 1rem;
@@ -76,7 +76,7 @@
         display: none;
         background: none;
         border: none;
-        color: var(--gray-12);
+        color: var(--color-text);
         padding-inline-end: 1rem;
     }
 
@@ -109,7 +109,7 @@
     a {
         font-family: var(--font-family);
         text-decoration: none;
-        color: var(--gray-12);
+        color: var(--color-text);
         font-size: 1rem;
     }
 
@@ -132,7 +132,7 @@
         font-weight: 315;
         margin: 0;
         letter-spacing: -0.5px;
-        color: var(--gray-12);
+        color: var(--color-text);
         max-inline-size: 700px;
         white-space: nowrap;
         padding-inline-start: 1rem;

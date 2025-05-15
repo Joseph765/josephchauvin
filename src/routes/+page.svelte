@@ -4,10 +4,11 @@
     import Nav from "./Nav.svelte";
     import Hero from "./Hero.svelte";
     import About from "./About.svelte";
+    import Footer from "./Footer.svelte";
 </script>
 
 <svelte:head>
-	<title>Joseph Chauvin</title>
+	<title>Joseph Chauvin | Video Game Composer</title>
 	<!-- <meta name="robots" content="noindex nofollow" /> -->
 </svelte:head>
 
@@ -16,17 +17,15 @@
         <Nav />
         <Hero />
     </header>
-    <div class="divider"></div>
     <Demos />
-    <!-- <div class="divider"></div>
-    <About /> -->
-    <div class="divider"></div>
+    <About />
     <Contact />
+    <Footer />
 </div>
 
 <style>
     .layout {
-        color: var(--gray-12);
+        color: var(--color-text);
         overflow: hidden;
     }
     
