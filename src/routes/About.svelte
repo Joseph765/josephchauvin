@@ -1,19 +1,33 @@
 <script>
-    import { Divider, Section } from "$lib/components";
+    import { Divider, Section, Heading } from "$lib/components";
+	import Text from "$lib/components/Text.svelte";
+
+    let showStudioPhoto = true;
 </script>
 
 <Divider />
 <Section id="about">
     <div class="container is-size-l">
-        <h3>About</h3>
+        <Heading style="padding-bottom: 2rem;">About</Heading>
         <div class="split">
-            <img alt="Joseph Chauvin next to a creek" src="/Creek.jpg" />
+            <div class="img-wrapper">
+                <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" style={showStudioPhoto ? "display: block" : "display: none;"} />
+                <img alt="Joseph Chauvin whitewater kayaking" src="/me-whitewater-kayaking.jpg" style={showStudioPhoto ? "display: none" : "display: block;"} />
+                <div class="button-group">
+                    <button aria-label="Previous Photo" onclick={() => showStudioPhoto = !showStudioPhoto}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button aria-label="Next Photo" onclick={() => showStudioPhoto = !showStudioPhoto}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
             <div class="text-content">
-                <p>Hi! I'm Joseph Chauvin, a music composer for 2D action games based in Asheville, North Carolina.</p>
+                <Text>Hi! I'm Joseph Chauvin, a music composer for 2D action games based in Asheville, North Carolina.</Text>
                 <br />
-                <p>I have a deep passion for crafting retro-styled action music that empowers players to overcome any challenge.</p>
+                <Text>I have a deep passion for crafting retro-styled action music that empowers players to overcome any challenge.</Text>
                 <br />
-                <p>When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</p>
+                <Text>When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
             </div>
         </div>
     </div>
@@ -35,7 +49,7 @@
     }
 
     .container.is-size-l {
-        max-inline-size: 1100px;
+        max-inline-size: 1250px;
     }
 
     .split {
@@ -46,33 +60,38 @@
         /* justify-content: center; */
     }
 
-    h3 {
-        font-family: var(--font-family);
-        font-size: 2rem;
-        font-weight: 350;
-        color: #d5d6d8;
-        letter-spacing: 1px;
-        text-transform: uppercase; 
-        text-align: center;
-        padding-bottom: 2rem;
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block-start: 1rem;
     }
 
-    p {
-        font-family: var(--font-family);
-        font-size: 1rem;
-        font-weight: 350;
-        color: #d5d6d8;
-        letter-spacing: 1px;
-        max-inline-size: 67ch;
-        line-height: 1.65;
-        /* text-align: center; */
+    button {
+        background: var(--gray-4);
+        border: none;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 32px;
     }
 
-    @media only screen and (max-width: 1154px) {
+    @media only screen and (max-width: 1307px) {
+        .img-wrapper {
+            width: 100%;
+        }
+
         img {
             height: auto;
             width: 100%;
             max-width: 700px;
+        }
+
+        .button-group {
+            max-width: 700px;
+            margin: auto;
         }
 
         .split {
@@ -85,8 +104,11 @@
             margin: auto;
         }
 
-        p {
-            text-align: center;
+    }
+
+    @media (pointer: fine) {
+        button:hover {
+            background: var(--gray-5)
         }
     }
 </style>

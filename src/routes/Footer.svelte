@@ -33,6 +33,6 @@
     }
 
     a:hover {
-        color: var(--indigo-12);
+        color: var(--color-accent);
     }
 </style>

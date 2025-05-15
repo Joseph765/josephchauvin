@@ -61,6 +61,7 @@
         max-inline-size: 700px;
         white-space: nowrap;
         padding-inline-start: 1rem;
+        text-shadow: 2px 2px 4px var(--color-background);
     }
 
     /* nav {
