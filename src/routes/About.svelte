@@ -25,7 +25,7 @@
             <div class="text-content">
                 <Text>Hi! I'm Joseph Chauvin, a music composer for 2D action games based in Asheville, North Carolina.</Text>
                 <br />
-                <Text>I have a deep passion for crafting retro-styled action music that empowers players to overcome any challenge.</Text>
+                <Text>I have a deep passion for crafting retro-styled action music that inspires players to overcome challenges.</Text>
                 <br />
                 <Text>When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
             </div>
