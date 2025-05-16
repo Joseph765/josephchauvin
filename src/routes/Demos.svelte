@@ -4,7 +4,7 @@
 
 <Divider />
 <Section id="music">
-    <div class="container is-size-l">
+    <div class="container is-size-s">
         <Heading style="padding-bottom: 2rem;">Music</Heading>
         <!-- <div class="songs">
             <div class="song">
@@ -53,6 +53,10 @@
 
     .container.is-size-l {
         max-inline-size: 1200px;
+    }
+
+    .container.is-size-s {
+        max-inline-size: 700px;
     }
 
     /* .container.is-size-xs {
