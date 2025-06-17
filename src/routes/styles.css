@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Gurmukhi MT";
+    background: var(--gray-1);
 }
 
 body {
@@ -120,6 +121,9 @@ span {
     --color-text-contrast: var(--gray-1);
     --color-text-link: var(--indigo-11);
     --color-accent: var(--indigo-9);
+    --color-border: var(--gray-6);
+
+    --space-m: 1rem;
     /* OLD */
     --color-text-weak: #d5d6d8;
     /* --color-text-weak: #161a1d; */

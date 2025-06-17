@@ -1,47 +1,28 @@
 <script>
-    import { Divider, Section, Text, Heading } from "$lib/components";
+    import { Divider, Section, Text, Heading, Container, Flex } from "$lib/components";
 </script>
 
 <Divider />
 <Section id="music">
-    <div class="container is-size-s">
+    <Container>
         <Heading style="padding-bottom: 2rem;">Music</Heading>
-        <!-- <div class="songs">
-            <div class="song">
-                <Heading size="s" style="padding-bottom: 1rem;">Retro</Heading>
-                <audio controls>
-                    <source src="/songs/Rush.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="song">
-                <Heading size="s" style="padding-bottom: 1rem;">Boss Battle</Heading>
-                <audio controls>
-                    <source src="/songs/Boss Battle.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="song">
-                <Heading size="s" style="padding-bottom: 1rem;">Adventure</Heading>
-                <audio controls>
-                    <source src="/songs/Blockrock.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </div> -->
-        <!-- ReelCrafter reel: Demo Reel -->
-        <iframe
-            title="Demo Reel"
-            width="100%"
-            height="400"
-            scrolling="no"
-            frameborder="no"
-            src="https://play.reelcrafter.com/embed/411f2358-fac7-499a-980e-3c9e85fadd2f">
-        </iframe>
+        <Flex direction="column">
+            <!-- Iconoclasts Recomposed YouTube Video -->
+            <iframe style="display: block; max-width: 900px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/kRZNdofcpoI?si=oreRsJjt2ofW0xY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- ReelCrafter reel: Demo Reel -->
+            <iframe
+                title="Demo Reel"
+                width="100%"
+                height="400"
+                scrolling="no"
+                frameborder="no"
+                src="https://play.reelcrafter.com/embed/411f2358-fac7-499a-980e-3c9e85fadd2f">
+            </iframe>
+        </Flex>
         <!-- <div class="container is-size-xs">
             <iframe title="Kinect EP" style="border-radius: 12px;" src="https://open.spotify.com/embed/album/2KXETLWscghzck2sIuHrMT?utm_source=generator" width="100%" height="420" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div> -->
-    </div>
+    </Container>
 </Section>
 
 <style>

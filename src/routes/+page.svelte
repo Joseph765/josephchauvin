@@ -21,10 +21,10 @@
 </svelte:head>
 
 <div class="layout">
-    <header>
+    <section>
         <Nav />
         <Hero />
-    </header>
+    </section>
     <Demos />
     <About />
     <Contact />
@@ -37,7 +37,7 @@
         overflow: hidden;
     }
     
-    header {
+    section {
         display: flex;
         align-items: center;
         flex-direction: column;
