@@ -14,9 +14,7 @@
             <a href="#about">About</a>
         </li>
         <li>
-            <a href="#contact">
-                Contact
-            </a>
+            <a class="contact" href="mailto:joseph.chauvin102@gmail.com">Contact</a>
         </li>
     </ul>
     <button aria-label="Navigation menu" class="hamburger" onclick={() => showMenu = !showMenu}>
@@ -38,7 +36,7 @@
                     <a href="#about" onclick={() => showMenu = false}>About</a>
                 </li>
                 <li>
-                    <a href="#contact" onclick={() => showMenu = false}>Contact</a>
+                    <a class="contact" href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>Contact</a>
                 </li>
             </ul>
         </div>
@@ -46,6 +44,19 @@
 </nav>
 
 <style>
+    .contact {
+        height: 24px;
+        padding: 0.5rem 1rem;
+        border-radius: 2px;
+        background: var(--color-accent);
+    }
+
+    .contact:hover {
+        /* text-decoration: none; */
+        background: var(--gray-12);
+        color: var(--gray-1);
+    }
+
     nav {
         position: fixed;
         background: var(--color-background);
@@ -113,7 +124,7 @@
         gap: 2rem;
         margin: 0;
         padding: 0;
-        padding-inline-end: 2rem;
+        padding-inline-end: 4rem;
     }
 
     .logo {

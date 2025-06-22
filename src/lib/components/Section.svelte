@@ -10,7 +10,7 @@
 
 <style>
     section {
-        padding-block: 6rem;
+        padding-block: 4rem;
         background-color: var(--color-background);
     }
 

@@ -1,23 +1,30 @@
 <script>
-    import { Divider, Section, Text, Heading, Container, Flex } from "$lib/components";
+    import { Divider, Section, Text, Heading, Container, Flex, Link } from "$lib/components";
 </script>
 
-<Divider />
 <Section id="music">
     <Container>
         <Heading style="padding-bottom: 2rem;">Music</Heading>
-        <Flex direction="column">
+        <Flex direction="column" gap="xl">
+            <!-- Retro Action Music Pack -->
+            <iframe style="display: block; max-width: 900px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/cY4oApBxKyI?si=-2CQ9M4HUJBHUg1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <Text>The <a href="https://josephchauvin.itch.io/retro-action-music-pack">Retro Action Music Pack</a> is all about rekindling the spirit of the best 2D action games of the retro era.</Text>
+            <Divider space="none" />
             <!-- Iconoclasts Recomposed YouTube Video -->
             <iframe style="display: block; max-width: 900px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/kRZNdofcpoI?si=oreRsJjt2ofW0xY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <Text>This is a recomposition I did for the game Iconoclasts.</Text>
+            <Divider space="none" />
             <!-- ReelCrafter reel: Demo Reel -->
-            <iframe
+            <!-- <iframe
                 title="Demo Reel"
                 width="100%"
                 height="400"
                 scrolling="no"
                 frameborder="no"
                 src="https://play.reelcrafter.com/embed/411f2358-fac7-499a-980e-3c9e85fadd2f">
-            </iframe>
+            </iframe> -->
+            <!-- Spotify Kinect EP -->
+            <iframe title="Kinetic EP" style="border-radius:12px" src="https://open.spotify.com/embed/album/2KXETLWscghzck2sIuHrMT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </Flex>
         <!-- <div class="container is-size-xs">
             <iframe title="Kinect EP" style="border-radius: 12px;" src="https://open.spotify.com/embed/album/2KXETLWscghzck2sIuHrMT?utm_source=generator" width="100%" height="420" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -26,18 +33,11 @@
 </Section>
 
 <style>
-    .container {
-        max-inline-size: 900px;
-        margin: auto;
-        padding-inline: 2rem;
-    }
-
-    .container.is-size-l {
-        max-inline-size: 1200px;
-    }
-
-    .container.is-size-s {
-        max-inline-size: 700px;
+    a {
+        font-family: var(--font-family);
+        font-weight: 350;
+        color: var(--color-text-link);
+        letter-spacing: 1px;
     }
 
     /* .container.is-size-xs {

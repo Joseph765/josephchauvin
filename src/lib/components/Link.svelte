@@ -16,7 +16,7 @@
 <style>
     a {
         font-family: var(--font-family);
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 350;
         color: var(--color-text-link);
         letter-spacing: 1px;

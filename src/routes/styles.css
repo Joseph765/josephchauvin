@@ -123,7 +123,10 @@ span {
     --color-accent: var(--indigo-9);
     --color-border: var(--gray-6);
 
+    --space-s: 0.5rem;
     --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
     /* OLD */
     --color-text-weak: #d5d6d8;
     /* --color-text-weak: #161a1d; */

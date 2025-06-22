@@ -1,4 +1,18 @@
-<img alt="My Studio" src="/my-studio.jpg" />
+<script>
+    import { Container, Flex, Text } from "$lib/components";
+</script>
+
+<section>
+    <Container>
+        <Flex direction="column">
+            <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" />
+            <br />
+            <Text style="color: var(--gray-1);">Hi! I'm Joseph Chauvin, a music composer for 2D action games based in Asheville, North Carolina.</Text>
+            <Text style="color: var(--gray-1);">I have a deep passion for crafting retro-styled action music that inspires players to overcome challenges.</Text>
+        </Flex>
+    </Container>
+</section>
+<!-- <img alt="My Studio" src="/my-studio.jpg" />
 <div class="overlay"></div>
 <div class="title">
     <h1>Music Composer For 2D Action Games</h1>
@@ -6,17 +20,31 @@
 </div>
 <div class="arrow-down">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-</div>
+</div> -->
 
 <style>
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* height: 100vh; */
+        background: var(--gray-12);
+        padding-block: 4rem;
+    }
+
     img {
+        max-width: 100%;
+        margin: auto;
+        border-radius: 2px;
+    }
+    /* img {
         object-fit: cover;
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
-    }
+    } */
 
     .overlay {
         width: 100%;

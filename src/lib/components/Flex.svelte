@@ -2,11 +2,14 @@
     /** @type { 'row' | 'column' } */
     export let direction = "row";
 
-    /** @type { 'm' | 'l' } */
+    /** @type { 'm' | 'l' | 'xl' } */
     export let gap = "m"
+
+    /** @type { 'start' | 'center' } */
+    export let justify = "start"
 </script>
 
-<div class="flex is-direction-{direction}">
+<div class="flex is-direction-{direction} has-gap-{gap} is-justify-{justify}">
     <slot />
 </div>
 
@@ -19,5 +22,17 @@
 
     .flex.is-direction-column {
         flex-direction: column;
+    }
+
+    .flex.has-gap-l {
+        gap: var(--space-l);
+    }
+
+    .flex.has-gap-xl {
+        gap: var(--space-xl);
+    }
+
+    .flex.is-justify-center {
+        justify-content: center;
     }
 </style>
