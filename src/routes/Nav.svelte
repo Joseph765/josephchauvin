@@ -147,6 +147,10 @@
             padding: 1rem 0;
         }
 
+        .logo {
+            padding-inline-start: 1rem;
+        }
+
         .hamburger {
             display: block;
         }
