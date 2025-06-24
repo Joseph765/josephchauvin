@@ -1,14 +1,13 @@
 <script>
-    import { Divider, Section, Heading } from "$lib/components";
+    import { Section, Heading } from "$lib/components";
 	import Text from "$lib/components/Text.svelte";
 
     let showStudioPhoto = true;
 </script>
 
-<Divider />
-<Section id="about">
+<section id="about">
     <div class="container is-size-l">
-        <Heading style="padding-bottom: 2rem;">About</Heading>
+        <Heading style="padding-bottom: 2rem; color: var(--gray-1);">About</Heading>
         <div class="split">
             <div class="img-wrapper">
                 <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" style={showStudioPhoto ? "display: block" : "display: none;"} />
@@ -23,18 +22,27 @@
                 </div>
             </div>
             <div class="text-content">
-                <Text>Hi! I'm Joseph Chauvin, a music composer for 2D action games based in Asheville, North Carolina.</Text>
+                <Text style="color: var(--gray-1);">Hi! I'm Joseph Chauvin, a music composer for 2D action games based in Asheville, North Carolina.</Text>
                 <br />
-                <Text>I have a deep passion for crafting retro-styled action music that inspires players to overcome challenges.</Text>
+                <Text style="color: var(--gray-1);">I have a deep passion for crafting retro-styled action music that inspires players to overcome challenges.</Text>
                 <br />
-                <Text>When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
+                <Text style="color: var(--gray-1);">When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
             </div>
         </div>
     </div>
-</Section>
+</section>
 
 
 <style>
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* height: 100vh; */
+        background: var(--gray-12);
+        padding-block: 4rem;
+    }
+    
     img {
         height: 338px;
         max-width: 100%;

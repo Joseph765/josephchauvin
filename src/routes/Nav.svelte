@@ -2,7 +2,7 @@
     let showMenu = false;
 </script>
 
-<!-- <nav>
+<nav>
     <a class="logo" href="/">Joseph Chauvin</a>
     <ul class="desktop-links">
         <li>
@@ -10,13 +10,11 @@
                 Music
             </a>
         </li>
-        <li>
+        <!-- <li>
             <a href="#about">About</a>
-        </li>
+        </li> -->
         <li>
-            <a href="#contact">
-                Contact
-            </a>
+            <a class="contact" href="mailto:joseph.chauvin102@gmail.com">Contact</a>
         </li>
     </ul>
     <button aria-label="Navigation menu" class="hamburger" onclick={() => showMenu = !showMenu}>
@@ -34,43 +32,36 @@
                         Music
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#about" onclick={() => showMenu = false}>About</a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="#contact" onclick={() => showMenu = false}>Contact</a>
+                    <a href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>Contact</a>
                 </li>
             </ul>
         </div>
     {/if}
-</nav> -->
-
-<a class="temp-logo" href="/">Joseph Chauvin</a>
+</nav>
 
 <style>
-    .temp-logo {
-        z-index: 9999;
-        padding: 1rem;
-        margin: auto;
-        font-family: var(--font-family);
-        font-size: 1.5rem;
-        font-weight: 315;
-        margin: 0;
-        letter-spacing: -0.5px;
-        color: var(--color-text);
-        max-inline-size: 700px;
-        white-space: nowrap;
-        padding-inline-start: 1rem;
-        text-shadow: 2px 2px 4px var(--color-background);
+    .contact {
+        height: 24px;
+        padding: 0.5rem 1rem;
+        border-radius: 2px;
+        background: var(--color-accent);
     }
 
-    /* nav {
+    nav {
+        position: fixed;
+        background: var(--color-background);
+        border-bottom: 1px solid var(--color-border);
+        top: 0;
         width: 100%;
         z-index: 9999;
         display: flex;
-        align-items: end;
+        align-items: center;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     .hamburger {
@@ -86,8 +77,8 @@
         border: 1px solid var(--gray-6);
         border-radius: 2px;
         position: absolute;
-        top: 3rem;
-        right: 1rem;
+        top: var(--header-height);
+        right: 0;
         padding: 2rem 1rem;
         width: 10rem;
     }
@@ -105,7 +96,7 @@
         align-items: center;
         justify-content: space-between;
         list-style-type: none;
-    } */
+    }
 
     a {
         font-family: var(--font-family);
@@ -118,13 +109,21 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .contact:hover {
+            background: var(--gray-12);
+            color: var(--gray-1);
+        }
     }
 
 
-    /* .desktop-links {
+    .desktop-links {
         display: flex;
         align-items: center;
         gap: 2rem;
+        margin: 0;
+        padding: 0;
+        padding-inline-end: 4rem;
     }
 
     .logo {
@@ -136,16 +135,24 @@
         color: var(--color-text);
         max-inline-size: 700px;
         white-space: nowrap;
-        padding-inline-start: 1rem;
-    } */
+        padding-inline-start: 2rem;
+    }
 
-    /* @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
         .desktop-links {
             display: none;
+        }
+
+        nav {
+            padding: 1rem 0;
+        }
+
+        .logo {
+            padding-inline-start: 1rem;
         }
 
         .hamburger {
             display: block;
         }
-    } */
+    }
 </style>
