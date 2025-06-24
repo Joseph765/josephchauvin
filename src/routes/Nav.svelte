@@ -10,9 +10,9 @@
                 Music
             </a>
         </li>
-        <li>
+        <!-- <li>
             <a href="#about">About</a>
-        </li>
+        </li> -->
         <li>
             <a class="contact" href="mailto:joseph.chauvin102@gmail.com">Contact</a>
         </li>
@@ -32,11 +32,11 @@
                         Music
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#about" onclick={() => showMenu = false}>About</a>
-                </li>
+                </li> -->
                 <li>
-                    <a class="contact" href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>Contact</a>
+                    <a href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>Contact</a>
                 </li>
             </ul>
         </div>
@@ -49,12 +49,6 @@
         padding: 0.5rem 1rem;
         border-radius: 2px;
         background: var(--color-accent);
-    }
-
-    .contact:hover {
-        /* text-decoration: none; */
-        background: var(--gray-12);
-        color: var(--gray-1);
     }
 
     nav {
@@ -83,8 +77,8 @@
         border: 1px solid var(--gray-6);
         border-radius: 2px;
         position: absolute;
-        top: 3rem;
-        right: 1rem;
+        top: var(--header-height);
+        right: 0;
         padding: 2rem 1rem;
         width: 10rem;
     }
@@ -115,6 +109,11 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .contact:hover {
+            background: var(--gray-12);
+            color: var(--gray-1);
+        }
     }
 
 
@@ -142,6 +141,10 @@
     @media only screen and (max-width: 700px) {
         .desktop-links {
             display: none;
+        }
+
+        nav {
+            padding: 1rem 0;
         }
 
         .hamburger {

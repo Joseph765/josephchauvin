@@ -1,4 +1,7 @@
 <script>
+    /** @type { string } */
+    export let style = "";
+
     /** @type { 'row' | 'column' } */
     export let direction = "row";
 
@@ -6,17 +9,19 @@
     export let gap = "m"
 
     /** @type { 'start' | 'center' } */
-    export let justify = "start"
+    export let justify = "start";
+
+    /** @type { 'start' | 'center' } */
+    export let align = "start"
 </script>
 
-<div class="flex is-direction-{direction} has-gap-{gap} is-justify-{justify}">
+<div style={style} class="flex is-direction-{direction} has-gap-{gap} is-justify-{justify} is-align-{align}">
     <slot />
 </div>
 
 <style>
     .flex {
         display: flex;
-        align-items: center;
         gap: var(--space-m);
     }
 
@@ -34,5 +39,9 @@
 
     .flex.is-justify-center {
         justify-content: center;
+    }
+
+    .flex.is-align-center {
+        align-items: center;
     }
 </style>

@@ -4,6 +4,7 @@
     import Music from "./Music.svelte";
     import About from "./About.svelte";
     import Footer from "./Footer.svelte";
+	import { Divider } from "$lib/components";
 </script>
 
 <svelte:head>
@@ -23,7 +24,8 @@
     <Nav />
     <Hero />
     <Music />
-    <About />
+    <!-- <About /> -->
+     <Divider />
     <Footer />
 </div>
 
@@ -31,6 +33,6 @@
     .layout {
         color: var(--color-text);
         overflow: hidden;
-        padding-block-start: 81px;
+        padding-block-start: var(--header-height);
     }
 </style>

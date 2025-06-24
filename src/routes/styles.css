@@ -116,6 +116,8 @@ span {
     --cyan-11: #4ccce6;
     --cyan-12: #b6ecf7; */
 
+    --header-height: 81px;
+
     --color-background: var(--gray-1);
     --color-text: var(--gray-12);
     --color-text-contrast: var(--gray-1);
@@ -130,4 +132,11 @@ span {
     /* OLD */
     --color-text-weak: #d5d6d8;
     /* --color-text-weak: #161a1d; */
+}
+
+@media only screen and (max-width: 700px) { 
+    :root {
+        /* --header-height: 58px; */
+        --header-height: 65px;
+    }  
 }
