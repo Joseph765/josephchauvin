@@ -5,7 +5,7 @@
     /** @type { 'row' | 'column' } */
     export let direction = "row";
 
-    /** @type { 'm' | 'l' | 'xl' } */
+    /** @type { 's' | 'm' | 'l' | 'xl' } */
     export let gap = "m"
 
     /** @type { 'start' | 'center' } */
@@ -27,6 +27,14 @@
 
     .flex.is-direction-column {
         flex-direction: column;
+    }
+
+    .flex.has-gap-s {
+        gap: var(--space-s);
+    }
+
+    .flex.has-gap-m {
+        gap: var(--space-m);
     }
 
     .flex.has-gap-l {

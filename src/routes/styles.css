@@ -34,20 +34,6 @@ span {
 
 :root {
     --font-family: "Roboto Slab", Georgia, Times, "Times New Roman", serif;
-
-    /* Radix UI Slate Light */
-    /* --gray-1: #fcfcfd;
-    --gray-2: #f9f9fb;
-    --gray-3: #f0f0f3;
-    --gray-4: #e8e8ec;
-    --gray-5: #e0e1e6;
-    --gray-6: #d9d9e0;
-    --gray-7: #cdced6;
-    --gray-8: #b9bbc6;
-    --gray-9: #8b8d98;
-    --gray-10: #80838d;
-    --gray-11: #60646c;
-    --gray-12: #1c2024; */
     
     /* Radix UI gray Dark */
 	--gray-1: #111113;
@@ -63,19 +49,6 @@ span {
 	--gray-11: #b0b4ba;
 	--gray-12: #edeef0;
 
-    /* --indigo-1: #fdfdfe;
-    --indigo-2: #f7f9ff;
-    --indigo-3: #edf2fe;
-    --indigo-4: #e1e9ff;
-    --indigo-5: #d2deff;
-    --indigo-6: #c1d0ff;
-    --indigo-7: #abbdf9;
-    --indigo-8: #8da4ef;
-    --indigo-9: #3e63dd;
-    --indigo-10: #3358d4;
-    --indigo-11: #3a5bc7;
-    --indigo-12: #1f2d5c; */
-
     /* Dark Theme */
     --indigo-1: #11131f;
     --indigo-2: #141726;
@@ -90,41 +63,32 @@ span {
     --indigo-11: #9eb1ff;
     --indigo-12: #d6e1ff;
 
-    /* --blue-1: #0d1520;
-    --blue-2: #111927;
-    --blue-3: #0d2847;
-    --blue-4: #003362;
-    --blue-5: #004074;
-    --blue-6: #104d87;
-    --blue-7: #205d9e;
-    --blue-8: #2870bd;
-    --blue-9: #0090ff;
-    --blue-10: #3b9eff;
-    --blue-11: #70b8ff;
-    --blue-12: #c2e6ff;
-
-    --cyan-1: #0b161a;
-    --cyan-2: #101b20;
-    --cyan-3: #082c36;
-    --cyan-4: #003848;
-    --cyan-5: #004558;
-    --cyan-6: #045468;
-    --cyan-7: #12677e;
-    --cyan-8: #11809c;
-    --cyan-9: #00a2c7;
-    --cyan-10: #23afd0;
-    --cyan-11: #4ccce6;
-    --cyan-12: #b6ecf7; */
+    --red-1: #191111;
+    --red-2: #201314;
+    --red-3: #3b1219;
+    --red-4: #500f1c;
+    --red-5: #611623;
+    --red-6: #72232d;
+    --red-7: #8c333a;
+    --red-8: #b54548;
+    --red-9: #e5484d;
+    --red-10: #ec5d5e;
+    --red-11: #ff9592;
+    --red-12: #ffd1d9;
 
     --header-height: 81px;
 
     --color-background: var(--gray-1);
+    --color-surface: var(--gray-2);
+    --color-surface-raised: var(--gray-4);
     --color-text: var(--gray-12);
     --color-text-contrast: var(--gray-1);
     --color-text-link: var(--indigo-11);
     --color-accent: var(--indigo-9);
     --color-border: var(--gray-6);
+    --color-text-danger: var(--red-9);
 
+    --space-xs: 0.25rem;
     --space-s: 0.5rem;
     --space-m: 1rem;
     --space-l: 2rem;
