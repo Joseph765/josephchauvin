@@ -80,62 +80,65 @@
 
 <div class="layout">
     <Nav />
-    <div class="section">
-        <div>
-            <Flex direction="column">
-                <Flex gap="s" direction="column">
-                    <label for="savings">Savings Account Balance</label>
-                    <input type="number" id="savings" placeholder="55000.00" bind:value={savings} min="0" step="0.01" />
-                </Flex>
-                <Flex gap="s" direction="column">
-                    <label for="checking">Checking Account Balance</label>
-                    <input type="number" id="checking" placeholder="10000.00"  bind:value={checking} min="0" step="0.01" />
-                </Flex>
-                <Flex gap="s" direction="column">
-                    <label for="monthlySpending">Monthly Budget</label>
-                    <input type="number" id="monthlySpending" placeholder="3000.00" bind:value={monthlySpending} min="0.01" step="0.01" />
-                </Flex>
-                <Flex gap="s" direction="column">
-                    <button on:click={handleSubmit}>Submit</button>
-                    {#if error}
-                        <p style="color: red;">{error}</p>
-                    {/if}
-                </Flex>
-            </Flex>
-        </div>
-    </div>
-    {#if submitted && projections.length > 0}
-        <Divider />
+    <div class="container">
         <div class="section">
-            <Flex direction="column">
-                <h2>Financial Projection</h2>
-                <div class="stat-card">
-                    <p class="stat-label">Months until $0 balance</p>
-                    <p class="stat">{monthsUntilZero}</p>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-label">Date of $0 balance</p>
-                    <p class="stat">{projections[projections.length - 1].date}</p>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Balance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {#each projections as proj, i}
-                            <tr>
-                                <td>{proj.date}</td>
-                                <td class={i === projections.length - 1 ? "is-danger" : ""}>${proj.balance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
-                            </tr>
-                        {/each}
-                    </tbody>
-                </table>
-            </Flex>
+            <div>
+                <Flex direction="column">
+                    <h2>Budget Calculator</h2>
+                    <Flex gap="s" direction="column">
+                        <label for="savings">Savings Account Balance</label>
+                        <input type="number" id="savings" placeholder="55000.00" bind:value={savings} min="0" step="1" />
+                    </Flex>
+                    <Flex gap="s" direction="column">
+                        <label for="checking">Checking Account Balance</label>
+                        <input type="number" id="checking" placeholder="10000.00" bind:value={checking} min="0" step="1" />
+                    </Flex>
+                    <Flex gap="s" direction="column">
+                        <label for="monthlySpending">Monthly Budget</label>
+                        <input type="number" id="monthlySpending" placeholder="3000.00" bind:value={monthlySpending} min="0" step="1" />
+                    </Flex>
+                    <Flex gap="s" direction="column">
+                        <button on:click={handleSubmit}>Submit</button>
+                        {#if error}
+                            <p style="color: var(--color-text-danger);">{error}</p>
+                        {/if}
+                    </Flex>
+                </Flex>
+            </div>
         </div>
-    {/if}
+        {#if submitted && projections.length > 0}
+            <Divider />
+            <div class="section">
+                <Flex direction="column">
+                    <h2>Financial Projection</h2>
+                    <div class="stat-card">
+                        <p class="stat-label">Months until $0 balance</p>
+                        <p class="stat">{monthsUntilZero}</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">Date of $0 balance</p>
+                        <p class="stat">{projections[projections.length - 1].date}</p>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {#each projections as proj, i}
+                                <tr>
+                                    <td>{proj.date}</td>
+                                    <td class={i === projections.length - 1 ? "is-danger" : ""}>${proj.balance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                                </tr>
+                            {/each}
+                        </tbody>
+                    </table>
+                </Flex>
+            </div>
+        {/if}
+    </div>
 </div>
 
 <style>
@@ -146,8 +149,20 @@
         font-family: var(--font-family);
     }
 
+    .container {
+        max-inline-size: 700px;
+        margin-inline: auto;
+    }
+
     .section {
         padding: 1rem 1rem;
+    }
+
+    h2 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
     }
 
     button {
@@ -172,6 +187,7 @@
         border: 1px solid var(--color-border);
         border-radius: 2px;
         background: var(--color-surface);
+        padding: 0.5rem;
     }
 
     input::placeholder {
@@ -216,6 +232,9 @@
     }
 
     th {
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
         background-color: var(--color-surface-raised);
     }
 </style>
