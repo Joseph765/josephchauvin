@@ -18,10 +18,10 @@
 
 <div class="layout">
     <Nav />
-    <Hero />
     <Music />
+    <Hero />
     <!-- <About /> -->
-     <Divider />
+     <!-- <Divider />   -->
     <Footer />
 </div>
 

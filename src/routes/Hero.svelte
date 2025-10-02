@@ -1,26 +1,29 @@
 <script>
     import { Container, Flex, Text } from "$lib/components";
+	import Divider from "$lib/components/Divider.svelte";
 </script>
 
 <section>
     <Container>
-        <Flex direction="column" align="center">
+        <Flex direction="column" gap="l" align="center">
             <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" />
             <br />
-            <Text style="color: var(--gray-1);">Hi! I'm Joseph Chauvin, a music composer for 2D action video games based in Asheville, North Carolina.</Text>
-            <Text style="color: var(--gray-1);">I have a deep passion for crafting retro-styled action music that inspires players to overcome challenges.</Text>
-            <Text style="color: var(--gray-1);">When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
+            <Text style="color: var(--gray-12);">Hi! I'm Joseph Chauvin, a music composer for 2D action video games based in Asheville, North Carolina.</Text>
+            <Text style="color: var(--gray-12);">I have a deep passion for crafting retro-styled action music that inspires players to overcome challenges.</Text>
+            <Text style="color: var(--gray-12);">When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
         </Flex>
     </Container>
 </section>
+<Divider />
 
 <style>
     section {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background: var(--gray-12);
+        /* background: var(--gray-12); */
         padding-block: 4rem;
+        color: var(--gray-1);
     }
 
     img {

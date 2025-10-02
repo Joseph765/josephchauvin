@@ -5,11 +5,11 @@
 <nav>
     <a class="logo" href="/">Joseph Chauvin</a>
     <ul class="desktop-links">
-        <li>
+        <!-- <li>
             <a href="#music">
                 Music
             </a>
-        </li>
+        </li> -->
         <!-- <li>
             <a href="#about">About</a>
         </li> -->
@@ -27,11 +27,11 @@
     {#if showMenu}
         <div class="mobile-menu">
             <ul class="mobile-links">
-                <li>
+                <!-- <li>
                     <a href="#music" onclick={() => showMenu = false}>
                         Music
                     </a>
-                </li>
+                </li> -->
                 <!-- <li>
                     <a href="#about" onclick={() => showMenu = false}>About</a>
                 </li> -->

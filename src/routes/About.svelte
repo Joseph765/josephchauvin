@@ -22,9 +22,8 @@
                 </div>
             </div>
             <div class="text-content">
-                <Text style="color: var(--gray-1);">Hi! I'm Joseph Chauvin, a music composer for 2D action games based in Asheville, North Carolina.</Text>
                 <br />
-                <Text style="color: var(--gray-1);">I have a deep passion for crafting retro-styled action music that inspires players to overcome challenges.</Text>
+                <Text style="color: var(--gray-1);">I have a deep passion for crafting atmospheric, evocative music for metroidvania games that immerses players in captivating and challenging worlds.</Text>
                 <br />
                 <Text style="color: var(--gray-1);">When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
             </div>
@@ -39,7 +38,7 @@
         align-items: center;
         flex-direction: column;
         /* height: 100vh; */
-        background: var(--gray-12);
+        /* background: var(--gray-12); */
         padding-block: 4rem;
     }
     
@@ -76,7 +75,7 @@
     }
 
     button {
-        background: var(--gray-4);
+        /* background: var(--gray-4); */
         border: none;
         border-radius: 3px;
         display: flex;
