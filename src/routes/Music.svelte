@@ -4,8 +4,8 @@
 
 <section id="music">
     <Container>
-        <Heading style="padding-bottom: 2rem; color: var(--gray-1);">Demo Reel</Heading>
-        <Flex direction="column" gap="l">
+        <Heading style="padding-bottom: 2rem;">Demo Reel</Heading>
+        <Flex direction="column" gap="xl">
             <!-- Retro Action Music Pack -->
             <!-- <iframe style="display: block; max-width: 900px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/cY4oApBxKyI?si=-2CQ9M4HUJBHUg1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <Flex direction="column" gap="m" align="center">
@@ -14,12 +14,13 @@
             </Flex>
             <Divider space="none" /> -->
             <!-- Iconoclasts Recomposed YouTube Video -->
-            <!-- <iframe style="display: block; max-width: 900px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/kRZNdofcpoI?si=oreRsJjt2ofW0xY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <Flex direction="column" align="center">
-                <Text>Enjoy a recomposition I did for the game Iconoclasts which perfectly encapsulates my style as a video game composer.</Text>
-                </Flex> -->
             <iframe style="display: block; max-width: 900px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/aPZhcU34UEI?si=ch-Zv4n1LhlzYh5G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <Text style="color: var(--gray-1);">Enjoy a handful of tracks I made inspired by the genre defining "Metroid" series.</Text>
+            <Text>Enjoy a handful of tracks I made inspired by the genre defining "Metroid" series.</Text>
+            <Divider space="none" />
+            <iframe style="display: block; max-width: 900px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/kRZNdofcpoI?si=oreRsJjt2ofW0xY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <Flex direction="column" align="center">
+                <Text>Enjoy a retro-styled recomposition I did for the game Iconoclasts.</Text>
+            </Flex>
             <!-- <Divider space="none" /> -->
             <!-- ReelCrafter reel: Demo Reel -->
             <!-- <iframe
@@ -38,7 +39,7 @@
 
 <style>
     section {
-        background: var(--gray-12);
+        /* background: var(--gray-12); */
         display: flex;
         align-items: center;
         flex-direction: column;
