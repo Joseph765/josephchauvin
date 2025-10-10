@@ -32,6 +32,6 @@
     }
 
     a:hover {
-        color: var(--indigo-11);
+        color: var(--indigo-9);
     }
 </style>

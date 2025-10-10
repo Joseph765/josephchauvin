@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Gurmukhi MT";
-    background: var(--gray-1);
+    background: var(--gray-12);
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 ::selection {
-    background: var(--indigo-5);
+    background: var(--indigo-11);
 }
 
 h1,
@@ -81,11 +81,11 @@ span {
     --color-background: var(--gray-1);
     --color-surface: var(--gray-2);
     --color-surface-raised: var(--gray-4);
-    --color-text: var(--gray-12);
-    --color-text-contrast: var(--gray-1);
+    --color-text: var(--gray-1);
+    --color-text-contrast: var(--gray-12);
     --color-text-link: var(--indigo-11);
     --color-accent: var(--indigo-9);
-    --color-border: var(--gray-6);
+    --color-border: var(--gray-11);
     --color-text-danger: var(--red-9);
 
     --space-xs: 0.25rem;
@@ -94,7 +94,8 @@ span {
     --space-l: 2rem;
     --space-xl: 4rem;
     /* OLD */
-    --color-text-weak: #d5d6d8;
+    /* --color-text-weak: #d5d6d8; */
+    --color-text-weak: var(--gray-3);
     /* --color-text-weak: #161a1d; */
 }
 

@@ -20,10 +20,12 @@
 <div class="layout">
     <Nav />
     <Hero />
+    <Divider />
     <Music />
     <!-- <About /> -->
-     <Contact />
-     <!-- <Divider /> -->
+    <Divider />
+    <Contact />
+    <Divider />
     <Footer />
 </div>
 

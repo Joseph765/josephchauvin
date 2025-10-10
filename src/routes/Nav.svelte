@@ -101,7 +101,7 @@
     a {
         font-family: var(--font-family);
         text-decoration: none;
-        color: var(--color-text);
+        color: var(--color-text-contrast);
         font-size: 1rem;
     }
 
@@ -132,7 +132,7 @@
         font-weight: 315;
         margin: 0;
         letter-spacing: -0.5px;
-        color: var(--color-text);
+        color: var(--color-text-contrast);
         max-inline-size: 700px;
         white-space: nowrap;
         padding-inline-start: 2rem;

@@ -1,12 +1,12 @@
 <script>
-    import { Section, Heading, Flex } from "$lib/components";
+    import { Section, Heading, Flex, Container } from "$lib/components";
 	import Text from "$lib/components/Text.svelte";
 
     let showStudioPhoto = true;
 </script>
 
 <section id="contact">
-    <div class="container">
+    <Container>
         <Heading style="padding-bottom: 2rem; color: var(--gray-1);">Custom Music</Heading>
         <Flex direction="column" gap="l">
             <div>
@@ -25,7 +25,7 @@
             </div>
             <a href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>Contact</a>
         </Flex>
-    </div>
+    </Container>
 </section>
 
 
@@ -55,16 +55,15 @@
         align-items: center;
         cursor: pointer;
         font-size: 1rem;
-        width: 100%;
         font-family: var(--font-family);
-        color: var(--color-text);
+        color: var(--color-text-contrast);
         text-decoration: none;
     }
 
     @media (pointer: fine) {
         a:hover {
             background: var(--gray-1);
-            color: var(--gray-12);
+            color: var(--color-text-contrast);
             text-decoration: underline;
         }
     }
