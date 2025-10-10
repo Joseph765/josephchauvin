@@ -1,9 +1,12 @@
 <script>
     /** @type { string } */
     export let style = "";
+
+    /** @type { boolean } */
+    export let mobileCenter = true;
 </script>
 
-<p {style}>
+<p class={mobileCenter ? "mobile-center" : ""} {style}>
     <slot />
 </p>
 
@@ -19,7 +22,7 @@
     }
 
     @media only screen and (max-width: 1307px) {
-        p {
+        p.mobile-center {
             text-align: center;
         }
     }

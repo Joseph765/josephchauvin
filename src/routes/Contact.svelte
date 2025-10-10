@@ -10,10 +10,10 @@
         <Heading style="padding-bottom: 2rem; color: var(--gray-1);">Custom Music</Heading>
         <Flex direction="column" gap="l">
             <div>
-                <Text style="color: var(--gray-1);">Interested in custom music for your project?</Text>
+                <Text style="color: var(--gray-1);" mobileCenter={false}>Interested in custom music for your project?</Text>
                 <br />
-                <Text style="color: var(--gray-1);">Contact me with details about:</Text>
-                <Text style="color: var(--gray-1);">
+                <Text style="color: var(--gray-1);" mobileCenter={false}>Contact me with details about:</Text>
+                <Text style="color: var(--gray-1);" mobileCenter={false}>
                     <ul>
                         <li>Your game's musical influences</li>
                         <li>Project deadline</li>
@@ -21,7 +21,7 @@
                         <li>Total minutes of music required</li>
                     </ul>
                 </Text>
-                <Text style="color: var(--gray-1);">Pricing is based on a per-minute rate for finished music.</Text>
+                <Text style="color: var(--gray-1);" mobileCenter={false}>Pricing is based on a per-minute rate for finished music.</Text>
             </div>
             <a href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>Contact</a>
         </Flex>

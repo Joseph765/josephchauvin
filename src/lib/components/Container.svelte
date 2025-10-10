@@ -12,7 +12,7 @@
         max-inline-size: 900px;
         margin: auto;
         padding-inline: 2rem;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .container.is-size-l {
