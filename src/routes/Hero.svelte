@@ -30,5 +30,6 @@
         max-width: 100%;
         margin: auto;
         border-radius: 2px;
+        max-height: 600px;
     }
 </style>

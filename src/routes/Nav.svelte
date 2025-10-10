@@ -5,16 +5,16 @@
 <nav>
     <a class="logo" href="/">Joseph Chauvin</a>
     <ul class="desktop-links">
-        <li>
+        <!-- <li>
             <a href="#music">
                 Music
             </a>
-        </li>
+        </li> -->
         <!-- <li>
             <a href="#about">About</a>
         </li> -->
         <li>
-            <a class="contact" href="mailto:joseph.chauvin102@gmail.com">Contact</a>
+            <a class="contact" href="#contact">Hire Me</a>
         </li>
     </ul>
     <button aria-label="Navigation menu" class="hamburger" onclick={() => showMenu = !showMenu}>
