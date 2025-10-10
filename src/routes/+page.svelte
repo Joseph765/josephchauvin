@@ -4,6 +4,7 @@
     import Music from "./Music.svelte";
     import About from "./About.svelte";
     import Footer from "./Footer.svelte";
+    import Contact from "./Contact.svelte";
 	import { Divider } from "$lib/components";
 </script>
 
@@ -19,9 +20,12 @@
 <div class="layout">
     <Nav />
     <Hero />
+    <Divider />
     <Music />
     <!-- <About /> -->
-     <Divider />
+    <Divider />
+    <Contact />
+    <Divider />
     <Footer />
 </div>
 
