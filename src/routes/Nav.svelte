@@ -68,7 +68,7 @@
         display: none;
         background: none;
         border: none;
-        color: var(--color-text);
+        color: var(--color-text-contrast);
         padding-inline-end: 1rem;
     }
 
