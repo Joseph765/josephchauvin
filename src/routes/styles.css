@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Gurmukhi MT";
-    background: var(--gray-12);
+    background: var(--color-background);
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 ::selection {
-    background: var(--indigo-11);
+    background: var(--indigo-7);
 }
 
 h1,
@@ -36,7 +36,7 @@ span {
     --font-family: "Roboto Slab", Georgia, Times, "Times New Roman", serif;
     
     /* Radix UI gray Dark */
-	--gray-1: #111113;
+	/* --gray-1: #111113;
 	--gray-2: #18191b;
 	--gray-3: #212225;
 	--gray-4: #272a2d;
@@ -47,21 +47,37 @@ span {
 	--gray-9: #696e77;
 	--gray-10: #777b84;
 	--gray-11: #b0b4ba;
-	--gray-12: #edeef0;
+	--gray-12: #edeef0; */
 
-    /* Dark Theme */
-    --indigo-1: #11131f;
-    --indigo-2: #141726;
-    --indigo-3: #182449;
-    --indigo-4: #1d2e62;
-    --indigo-5: #253974;
-    --indigo-6: #304384;
-    --indigo-7: #3a4f97;
-    --indigo-8: #435db1;
-    --indigo-9: #3e63dd;
-    --indigo-10: #5472e4;
-    --indigo-11: #9eb1ff;
-    --indigo-12: #d6e1ff;
+    /* Radix UI gray light */
+
+    --brand-dark: #111113;
+
+	--gray-1: #fcfcfc;
+	--gray-2: #f9f9f9;
+	--gray-3: #f0f0f0;
+	--gray-4: #e8e8e8;
+	--gray-5: #e0e0e0;
+	--gray-6: #d9d9d9;
+	--gray-7: #cecece;
+	--gray-8: #bbbbbb;
+	--gray-9: #8d8d8d;
+	--gray-10: #838383;
+	--gray-11: #646464;
+	--gray-12: #202020;
+
+	--indigo-1: #fdfdfe;
+	--indigo-2: #f7f9ff;
+	--indigo-3: #edf2fe;
+	--indigo-4: #e1e9ff;
+	--indigo-5: #d2deff;
+	--indigo-6: #c1d0ff;
+	--indigo-7: #abbdf9;
+	--indigo-8: #8da4ef;
+	--indigo-9: #3e63dd;
+	--indigo-10: #3358d4;
+	--indigo-11: #3a5bc7;
+	--indigo-12: #1f2d5c;
 
     --red-1: #191111;
     --red-2: #201314;
@@ -80,12 +96,12 @@ span {
 
     --color-background: var(--gray-1);
     --color-surface: var(--gray-2);
-    --color-surface-raised: var(--gray-4);
-    --color-text: var(--gray-1);
-    --color-text-contrast: var(--gray-12);
+    --color-surface-raised: var(--gray-3);
+    --color-text: var(--gray-12);
+    --color-text-contrast: var(--gray-1);
     --color-text-link: var(--indigo-11);
     --color-accent: var(--indigo-9);
-    --color-border: var(--gray-11);
+    --color-border: var(--gray-6);
     --color-text-danger: var(--red-9);
 
     --space-xs: 0.25rem;
@@ -95,7 +111,8 @@ span {
     --space-xl: 4rem;
     /* OLD */
     /* --color-text-weak: #d5d6d8; */
-    --color-text-weak: var(--gray-3);
+    --color-text-weak: var(--gray-11);
+    --color-text-placeholder: var(--gray-8);
     /* --color-text-weak: #161a1d; */
 }
 

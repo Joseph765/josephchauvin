@@ -8,9 +8,9 @@
         <Flex direction="column" gap="l" align="center">
             <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" />
             <br />
-            <Text style="color: var(--gray-1);">Hi! I'm Joseph Chauvin, a music composer for 2D action video games based in Asheville, North Carolina.</Text>
-            <Text style="color: var(--gray-1);">I have a deep passion for crafting atmospheric, evocative music for metroidvania games that immerses players in captivating and challenging worlds.</Text>
-            <Text style="color: var(--gray-1);">When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
+            <Text>Hi! I'm Joseph Chauvin, a music composer for 2D action video games based in Asheville, North Carolina.</Text>
+            <Text>I have a deep passion for crafting atmospheric, evocative music for metroidvania games that immerses players in captivating and challenging worlds.</Text>
+            <Text>When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
         </Flex>
     </Container>
 </section>
@@ -21,9 +21,8 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        background: var(--gray-12);
         padding-block: 4rem;
-        color: var(--gray-1);
+        color: var(--color-text);
     }
 
     img {

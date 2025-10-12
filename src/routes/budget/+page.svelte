@@ -173,12 +173,20 @@
         cursor: pointer;
         height: 3rem;
         width: 100%;
-        color: var(--color-text);
+        color: var(--color-text-contrast);
         font-family: var(--font-family);
         font-size: 1rem;
         padding: 0.5rem 1rem;
         border-radius: 2px;
         background: var(--color-accent);
+    }
+
+    @media (pointer: fine) {
+        button:hover {
+            background-color: var(--color-text);
+            color: var(--color-text-contrast);
+            text-decoration: underline;
+        }
     }
 
     input {
@@ -188,10 +196,11 @@
         border-radius: 2px;
         background: var(--color-surface);
         padding: 0.5rem;
+        color: var(--color-text);
     }
 
     input::placeholder {
-        color: var(--gray-6); /* Sets the placeholder text color to red using a hex code */
+        color: var(--color-text-placeholder); /* Sets the placeholder text color to red using a hex code */
     }
 
     .stat-card {

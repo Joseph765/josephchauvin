@@ -53,7 +53,7 @@
 
     nav {
         position: fixed;
-        background: var(--color-background);
+        background: var(--brand-dark);
         border-bottom: 1px solid var(--color-border);
         top: 0;
         width: 100%;
@@ -111,8 +111,8 @@
         }
 
         .contact:hover {
-            background: var(--gray-12);
-            color: var(--gray-1);
+            background: var(--color-background);
+            color: var(--color-text);
         }
     }
 

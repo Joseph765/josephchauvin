@@ -13,7 +13,7 @@
 <style>
     p {
         font-family: var(--font-family);
-        color: var(--color-text-weak);
+        color: var(--color-text);
         font-weight: 350;
         letter-spacing: 1px;
         font-size: 1.25rem;

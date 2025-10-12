@@ -7,13 +7,13 @@
 
 <section id="contact">
     <Container>
-        <Heading style="padding-bottom: 2rem; color: var(--gray-1);">Custom Music</Heading>
+        <Heading style="padding-bottom: 2rem;">Custom Music</Heading>
         <Flex direction="column" gap="l">
             <div>
-                <Text style="color: var(--gray-1);" mobileCenter={false}>Interested in custom music for your project?</Text>
+                <Text mobileCenter={false}>Interested in custom music for your project?</Text>
                 <br />
-                <Text style="color: var(--gray-1);" mobileCenter={false}>Contact me with details about:</Text>
-                <Text style="color: var(--gray-1);" mobileCenter={false}>
+                <Text mobileCenter={false}>Contact me with details about:</Text>
+                <Text mobileCenter={false}>
                     <ul>
                         <li>Your game's musical influences</li>
                         <li>Project deadline</li>
@@ -21,7 +21,7 @@
                         <li>Total minutes of music required</li>
                     </ul>
                 </Text>
-                <Text style="color: var(--gray-1);" mobileCenter={false}>Pricing is based on a per-minute rate for finished music.</Text>
+                <Text mobileCenter={false}>Pricing is based on a per-minute rate for finished music.</Text>
             </div>
             <a href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>Contact</a>
         </Flex>
@@ -35,7 +35,7 @@
         align-items: center;
         flex-direction: column;
         /* height: 100vh; */
-        background: var(--gray-12);
+        /* background: var(--gray-12); */
         padding-block: 4rem;
     }
 
@@ -62,7 +62,7 @@
 
     @media (pointer: fine) {
         a:hover {
-            background: var(--gray-1);
+            background: var(--color-text);
             color: var(--color-text-contrast);
             text-decoration: underline;
         }
