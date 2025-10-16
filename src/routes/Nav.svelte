@@ -101,7 +101,7 @@
     a {
         font-family: var(--font-family);
         text-decoration: none;
-        color: var(--color-text-contrast);
+        color: var(--color-text);
         font-size: 1rem;
     }
 
