@@ -49,6 +49,7 @@
         padding: 0.5rem 1rem;
         border-radius: 2px;
         background: var(--color-accent);
+        color: var(--color-text-contrast);
     }
 
     nav {
