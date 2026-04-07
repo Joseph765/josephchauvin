@@ -40,14 +40,6 @@
 </nav>
 
 <style>
-    .contact {
-        height: 24px;
-        padding: 0.5rem 1rem;
-        border-radius: 2px;
-        background: var(--color-accent);
-        color: var(--v-color-text);
-    }
-
     nav {
         position: fixed;
         background: var(--v-gray-2);
@@ -70,6 +62,7 @@
     }
 
     .mobile-menu {
+        touch-action: manipulation;
         background: var(--v-gray-4);
         border: 1px solid var(--v-gray-6);
         border-radius: 2px;
