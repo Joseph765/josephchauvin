@@ -54,6 +54,7 @@
     }
 
     .hamburger {
+        touch-action: manipulation;
         display: none;
         background: none;
         border: none;
