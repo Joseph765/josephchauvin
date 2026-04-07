@@ -15,7 +15,7 @@
     export let href = "";
 </script>
 
-<div class="button-wrapper">
+<div class="button-wrapper {expanded ? "is-expanded" : undefined}">
     {#if href}
         <a {href} class="button-overlay is-size-{size}">
             <slot name="start" />
@@ -30,13 +30,13 @@
         </div>
     {/if}
     {#if href}
-        <a {href} class="button is-link is-size-{size} {expanded ? "is-expanded" : undefined}" tabindex="0" {...$$restProps} on:click>
+        <a {href} class="button is-link is-size-{size}" tabindex="0" {...$$restProps} on:click>
             <slot name="start" />
             <slot />
             <slot name="end" />
         </a>
     {:else}
-        <button class="button is-{variant} is-size-{size} {expanded ? "is-expanded" : undefined}" disabled={disabled} tabindex="0" {...$$restProps} on:click>
+        <button class="button is-{variant} is-size-{size}" disabled={disabled} tabindex="0" {...$$restProps} on:click>
             <slot name="start" />
             <slot />
             <slot name="end" />
@@ -50,6 +50,12 @@
         height: 32px;
         width: max-content;
         cursor: pointer;
+    }
+
+    .button-wrapper.is-expanded,
+    .button-wrapper.is-expanded .button-overlay,
+    .button-wrapper.is-expanded .button {
+        width: 100%;
     }
 
     .button,

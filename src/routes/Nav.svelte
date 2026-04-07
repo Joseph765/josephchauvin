@@ -13,7 +13,7 @@
             </Button>
         </li>
     </ul>
-    <button aria-label="Navigation menu" class="hamburger" onclick={() => showMenu = !showMenu}>
+    <!-- <button aria-label="Navigation menu" class="hamburger" onclick={() => showMenu = !showMenu}>
         {#if showMenu}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         {:else}
@@ -28,15 +28,12 @@
                         Demo Reel
                     </a>
                 </li>
-                <!-- <li>
-                    <a href="#about" onclick={() => showMenu = false}>About</a>
-                </li> -->
                 <li>
                     <a href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>Contact</a>
                 </li>
             </ul>
         </div>
-    {/if}
+    {/if} -->
 </nav>
 
 <style>
@@ -114,7 +111,7 @@
         gap: 2rem;
         margin: 0;
         padding: 0;
-        padding-inline-end: 4rem;
+        /* padding-inline-end: 3rem; */
     }
 
     .logo {

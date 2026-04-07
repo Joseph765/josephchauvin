@@ -1,3 +1,4 @@
+export { default as Button } from "$lib/components/Button.svelte";
 export { default as Container } from "$lib/components/Container.svelte";
 export { default as Divider } from "$lib/components/Divider.svelte";
 export { default as Flex } from "$lib/components/Flex.svelte";
