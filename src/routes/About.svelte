@@ -7,7 +7,7 @@
 
 <section id="about">
     <div class="container is-size-l">
-        <Heading style="padding-bottom: 2rem; color: var(--gray-1);">About</Heading>
+        <Heading style="padding-bottom: 2rem; color: var(--v-gray-1);">About</Heading>
         <div class="split">
             <div class="img-wrapper">
                 <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" style={showStudioPhoto ? "display: block" : "display: none;"} />
@@ -23,9 +23,9 @@
             </div>
             <div class="text-content">
                 <br />
-                <Text style="color: var(--gray-1);">I have a deep passion for crafting atmospheric, evocative music for metroidvania games that immerses players in captivating and challenging worlds.</Text>
+                <Text style="color: var(--v-gray-1);">I have a deep passion for crafting atmospheric, evocative music for metroidvania games that immerses players in captivating and challenging worlds.</Text>
                 <br />
-                <Text style="color: var(--gray-1);">When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
+                <Text style="color: var(--v-gray-1);">When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
             </div>
         </div>
     </div>
@@ -38,7 +38,7 @@
         align-items: center;
         flex-direction: column;
         /* height: 100vh; */
-        /* background: var(--gray-12); */
+        /* background: var(--v-gray-12); */
         padding-block: 4rem;
     }
     
@@ -75,7 +75,7 @@
     }
 
     button {
-        /* background: var(--gray-4); */
+        /* background: var(--v-gray-4); */
         border: none;
         border-radius: 3px;
         display: flex;
@@ -115,7 +115,7 @@
 
     @media (pointer: fine) {
         button:hover {
-            background: var(--gray-5)
+            background: var(--v-gray-5)
         }
     }
 </style>

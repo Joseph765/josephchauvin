@@ -100,7 +100,7 @@
                     <Flex gap="s" direction="column">
                         <button on:click={handleSubmit}>Submit</button>
                         {#if error}
-                            <p style="color: var(--color-text-danger);">{error}</p>
+                            <p style="color: var(--v-color-text-danger);">{error}</p>
                         {/if}
                     </Flex>
                 </Flex>
@@ -143,10 +143,10 @@
 
 <style>
     .layout {
-        color: var(--color-text);
+        color: var(--v-color-text);
         overflow: hidden;
         padding-block-start: var(--header-height);
-        font-family: var(--font-family);
+        font-family: var(--v-font);
     }
 
     .container {
@@ -159,7 +159,7 @@
     }
 
     h2 {
-        font-family: var(--font-family);
+        font-family: var(--v-font);
         font-weight: 400;
         letter-spacing: 0.5px;
         text-transform: uppercase;
@@ -173,8 +173,8 @@
         cursor: pointer;
         height: 3rem;
         width: 100%;
-        color: var(--color-text-contrast);
-        font-family: var(--font-family);
+        color: var(--v-color-text-contrast);
+        font-family: var(--v-font);
         font-size: 1rem;
         padding: 0.5rem 1rem;
         border-radius: 2px;
@@ -183,8 +183,8 @@
 
     @media (pointer: fine) {
         button:hover {
-            background-color: var(--color-text);
-            color: var(--color-text-contrast);
+            background-color: var(--v-color-text);
+            color: var(--v-color-text-contrast);
             text-decoration: underline;
         }
     }
@@ -194,13 +194,13 @@
         font-size: 1rem;
         border: 1px solid var(--color-border);
         border-radius: 2px;
-        background: var(--color-surface);
+        background: var(--v-color-surface);
         padding: 0.5rem;
-        color: var(--color-text);
+        color: var(--v-color-text);
     }
 
     input::placeholder {
-        color: var(--color-text-placeholder); /* Sets the placeholder text color to red using a hex code */
+        color: var(--v-color-text-placeholder); /* Sets the placeholder text color to red using a hex code */
     }
 
     .stat-card {
@@ -209,41 +209,41 @@
         gap: var(--space-s);
         border: 1px solid var(--color-border);
         border-radius: 2px;
-        background: var(--color-surface);
+        background: var(--v-color-surface);
         padding: 1rem;
     }
 
     .stat-label {
         font-size: 1rem;
-        color: var(--color-text-weak);
+        color: var(--v-color-text-weak);
     }
 
     .stat {
         font-size: 1.5rem;
-        color: var(--color-text);
+        color: var(--v-color-text);
     }
 
     table {
         border-collapse: collapse;
         width: 100%;
-        color: var(--color-text);
+        color: var(--v-color-text);
     }
 
     .is-danger {
-        color: var(--color-text-danger);
+        color: var(--v-color-text-danger);
     }
 
     th, td {
         border: 1px solid var(--color-border);
         padding: 8px;
         text-align: left;
-        background: var(--color-surface);
+        background: var(--v-color-surface);
     }
 
     th {
         font-weight: 400;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        background-color: var(--color-surface-raised);
+        background-color: var(--v-color-surface-raised);
     }
 </style>

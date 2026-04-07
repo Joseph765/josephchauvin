@@ -22,20 +22,20 @@
 <style>
     h3, 
     h4 {
-        font-family: var(--font-family);
-        color: var(--color-text);
-        font-weight: 350;
+        font-family: var(--v-font);
+        font-weight: var(--v-font-weight-bold);
+        color: var(--v-color-text);
         letter-spacing: 1px;
-        text-transform: uppercase; 
         text-align: center;
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: var(--v-font-size-3xl);
+        letter-spacing: var(--v-letter-spacing-3xl);
     }
 
     h4 {
-        font-size: 1.25rem;
+        font-size: var(--v-font-size-xl);
     }
 
     .is-align-start {

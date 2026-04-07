@@ -1,20 +1,16 @@
 <script>
+    import Button from "$lib/components/Button.svelte";
     let showMenu = false;
 </script>
 
 <nav>
     <a class="logo" href="/">Joseph Chauvin</a>
     <ul class="desktop-links">
-        <!-- <li>
-            <a href="#music">
-                Music
-            </a>
-        </li> -->
-        <!-- <li>
-            <a href="#about">About</a>
-        </li> -->
         <li>
-            <a class="contact" href="#contact">Hire Me</a>
+            <Button href="mailto:joseph.chauvin102@gmail.com" size="l">
+                <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                Contact
+            </Button>
         </li>
     </ul>
     <button aria-label="Navigation menu" class="hamburger" onclick={() => showMenu = !showMenu}>
@@ -28,8 +24,8 @@
         <div class="mobile-menu">
             <ul class="mobile-links">
                 <li>
-                    <a href="#music" onclick={() => showMenu = false}>
-                        Music
+                    <a href="#demoreel" onclick={() => showMenu = false}>
+                        Demo Reel
                     </a>
                 </li>
                 <!-- <li>
@@ -49,13 +45,13 @@
         padding: 0.5rem 1rem;
         border-radius: 2px;
         background: var(--color-accent);
-        color: var(--color-text-contrast);
+        color: var(--v-color-text);
     }
 
     nav {
         position: fixed;
-        background: var(--brand-dark);
-        border-bottom: 1px solid var(--color-border);
+        background: var(--v-gray-2);
+        border-bottom: 1px solid var(--v-gray-4);
         top: 0;
         width: 100%;
         z-index: 9999;
@@ -69,13 +65,13 @@
         display: none;
         background: none;
         border: none;
-        color: var(--color-text-contrast);
+        color: var(--v-color-text);
         padding-inline-end: 1rem;
     }
 
     .mobile-menu {
-        background: var(--gray-4);
-        border: 1px solid var(--gray-6);
+        background: var(--v-gray-4);
+        border: 1px solid var(--v-gray-6);
         border-radius: 2px;
         position: absolute;
         top: var(--header-height);
@@ -100,9 +96,9 @@
     }
 
     a {
-        font-family: var(--font-family);
+        font-family: var(--v-font);
         text-decoration: none;
-        color: var(--color-text);
+        color: var(--v-color-text);
         font-size: 1rem;
     }
 
@@ -112,8 +108,8 @@
         }
 
         .contact:hover {
-            background: var(--color-background);
-            color: var(--color-text);
+            background: var(--v-color-background);
+            color: var(--v-color-text);
         }
     }
 
@@ -128,15 +124,12 @@
     }
 
     .logo {
-        font-family: var(--font-family);
-        font-size: 1.5rem;
-        font-weight: 315;
-        margin: 0;
-        letter-spacing: -0.5px;
-        color: var(--color-text-contrast);
-        max-inline-size: 700px;
-        white-space: nowrap;
-        padding-inline-start: 2rem;
+        font-family: var(--v-font);
+        font-weight: var(--v-font-weight-black);
+        font-size: var(--v-font-size-3xl);
+        line-height: 1;
+        letter-spacing: var(--v-letter-spacing-3xl);
+        /* padding: 0 var(--v-space-m) var(--v-space-m) var(--v-space-m); */
     }
 
     @media only screen and (max-width: 700px) {

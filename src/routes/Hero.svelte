@@ -8,13 +8,12 @@
         <Flex direction="column" gap="l" align="center">
             <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" />
             <br />
-            <Text>Hi! I'm Joseph Chauvin, a music composer for video games based in Asheville, North Carolina.</Text>
-            <Text>I have a deep passion for crafting atmospheric, evocative music for metroidvania games that immerses players in captivating and challenging worlds.</Text>
-            <Text>When I'm not writing music or playing video games, I enjoy spending time whitewater kayaking with my friends in the Appalachian mountains.</Text>
+            <Text>Hello! I'm Joseph Chauvin, a sound designer for video games based in Houston, Texas.</Text>
+            <Text>I'm passionate about creating immersive audio for games. I especially love working with synthesizers and designing sci-fi sounds, futuristic ambiences, and powerful effects.</Text>
+            <Text>When I'm not designing sounds or playing video games, I love spending time with my family.</Text>
         </Flex>
     </Container>
 </section>
-<!-- <Divider /> -->
 
 <style>
     section {
@@ -22,7 +21,8 @@
         align-items: center;
         flex-direction: column;
         padding-block: 4rem;
-        color: var(--color-text);
+        color: var(--v-color-text);
+        background-color: var(--v-color-background);
     }
 
     img {

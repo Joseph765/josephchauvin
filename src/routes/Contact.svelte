@@ -35,7 +35,7 @@
         align-items: center;
         flex-direction: column;
         /* height: 100vh; */
-        /* background: var(--gray-12); */
+        /* background: var(--v-gray-12); */
         padding-block: 4rem;
     }
 
@@ -55,15 +55,15 @@
         align-items: center;
         cursor: pointer;
         font-size: 1rem;
-        font-family: var(--font-family);
-        color: var(--color-text-contrast);
+        font-family: var(--v-font);
+        color: var(--v-color-text-contrast);
         text-decoration: none;
     }
 
     @media (pointer: fine) {
         a:hover {
-            background: var(--color-text);
-            color: var(--color-text-contrast);
+            background: var(--v-color-text);
+            color: var(--v-color-text-contrast);
             text-decoration: underline;
         }
     }

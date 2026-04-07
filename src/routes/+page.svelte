@@ -1,7 +1,7 @@
 <script>
     import Nav from "./Nav.svelte";
     import Hero from "./Hero.svelte";
-    import Music from "./Music.svelte";
+    import DemoReel from "./DemoReel.svelte";
     import About from "./About.svelte";
     import Footer from "./Footer.svelte";
     import Contact from "./Contact.svelte";
@@ -9,10 +9,10 @@
 </script>
 
 <svelte:head>
-	<title>Joseph Chauvin | Video Game Composer</title>
+	<title>Joseph Chauvin | Video Game Sound Designer</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Music Composer For 2D Action Games">
-    <meta name="keywords" content="Video Game Music Composer">
+    <meta name="description" content="Sound Designer For Video Games">
+    <meta name="keywords" content="Video Game Sound Designer">
     <meta name="author" content="Joseph Chauvin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </svelte:head>
@@ -21,17 +21,14 @@
     <Nav />
     <Hero />
     <Divider />
-    <Music />
-    <!-- <About /> -->
-    <Divider />
-    <Contact />
+    <DemoReel />
     <Divider />
     <Footer />
 </div>
 
 <style>
     .layout {
-        color: var(--color-text);
+        color: var(--v-color-text);
         overflow: hidden;
         padding-block-start: var(--header-height);
     }

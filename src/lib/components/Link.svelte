@@ -15,10 +15,9 @@
 
 <style>
     a {
-        font-family: var(--font-family);
+        font-family: var(--v-font);
         font-size: 1.25rem;
-        font-weight: 350;
-        color: var(--color-text-link);
+        color: var(--v-color-text-link);
         letter-spacing: 1px;
     }
 

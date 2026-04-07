@@ -11,7 +11,7 @@
 <style>
     section {
         padding-block: 4rem;
-        background-color: var(--color-background);
+        background-color: var(--v-color-background);
     }
 
     @media only screen and (max-width: 1154px) {

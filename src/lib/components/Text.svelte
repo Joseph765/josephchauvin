@@ -12,12 +12,11 @@
 
 <style>
     p {
-        font-family: var(--font-family);
-        color: var(--color-text);
-        font-weight: 350;
+        font-family: var(--v-font);
+        color: var(--v-color-text);
         letter-spacing: 1px;
         font-size: 1.25rem;
-        max-inline-size: 67ch;
+        max-inline-size: 60ch;
         line-height: 1.65;
     }
 
