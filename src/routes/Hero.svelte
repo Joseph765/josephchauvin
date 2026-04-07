@@ -6,7 +6,7 @@
 <section>
     <Container>
         <Flex direction="column" gap="l" align="center">
-            <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" />
+            <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio-2.jpg" />
             <br />
             <Text>Hello! I'm Joseph Chauvin, a sound designer for video games based in Houston, Texas.</Text>
             <Text>I'm passionate about creating immersive audio for games. I especially love working with synthesizers and designing sci-fi sounds, futuristic ambiences, and powerful effects.</Text>

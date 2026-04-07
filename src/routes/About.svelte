@@ -10,7 +10,7 @@
         <Heading style="padding-bottom: 2rem; color: var(--v-gray-1);">About</Heading>
         <div class="split">
             <div class="img-wrapper">
-                <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" style={showStudioPhoto ? "display: block" : "display: none;"} />
+                <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio-2.jpg" style={showStudioPhoto ? "display: block" : "display: none;"} />
                 <img alt="Joseph Chauvin whitewater kayaking" src="/me-whitewater-kayaking.jpg" style={showStudioPhoto ? "display: none" : "display: block;"} />
                 <div class="button-group">
                     <button aria-label="Previous Photo" onclick={() => showStudioPhoto = !showStudioPhoto}>
