@@ -7,7 +7,7 @@
 
 <style>
     .divider {
-        border-top: 1px solid var(--v-color-border);
+        border-top: 1px solid var(--v-gray-2);
         margin-block: 2rem;
         width: 100%;
     }
