@@ -127,11 +127,6 @@
         a:hover {
             text-decoration: underline;
         }
-
-        .contact:hover {
-            background: var(--v-color-background);
-            color: var(--v-color-text);
-        }
     }
 
 
