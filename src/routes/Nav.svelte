@@ -12,9 +12,6 @@
         <li>
             <a href="#sfxpacks">SFX Packs</a>
         </li>
-        <!-- <li>
-            <a href="#customsfx">Custom SFX</a>
-        </li> -->
         <li>
             <a href="#testimonials">Testimonials</a>
         </li>
@@ -22,7 +19,6 @@
             <a href="#about">About</a>
         </li>
         <Button href="#customsfx" size="l">
-            <!-- <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg> -->
             Custom SFX
         </Button>
     </ul>
@@ -42,11 +38,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#customsfx" onclick={() => showMenu = false}>
-                        Custom SFX
-                    </a>
-                </li>
-                <li>
                     <a href="#testimonials" onclick={() => showMenu = false}>
                         Testimonials
                     </a>
@@ -56,11 +47,11 @@
                         About
                     </a>
                 </li>
-                <!-- <li>
-                    <a href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>
-                        Contact
+                <li>
+                    <a href="#customsfx" onclick={() => showMenu = false}>
+                        Custom SFX
                     </a>
-                </li> -->
+                </li>
             </ul>
         </div>
     {/if}
@@ -136,7 +127,6 @@
         gap: 2rem;
         margin: 0;
         padding: 0;
-        /* padding-inline-end: 3rem; */
     }
 
     .logo {
@@ -145,7 +135,6 @@
         font-size: var(--v-font-size-3xl);
         line-height: 1;
         letter-spacing: var(--v-letter-spacing-3xl);
-        /* padding: 0 var(--v-space-m) var(--v-space-m) var(--v-space-m); */
     }
 
     .subtitle {

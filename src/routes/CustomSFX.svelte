@@ -47,9 +47,7 @@
 
     a {
         font-family: var(--v-font);
-        /* text-decoration: none; */
         color: var(--v-color-text);
-        /* font-size: 1rem; */
     }
 
     @media only screen and (max-width: 700px) { 

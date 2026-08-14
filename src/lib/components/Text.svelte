@@ -8,9 +8,6 @@
     /** @type { 'default' | 'weak' } */
     export let variant = "default";
 
-    // /** @type { 's' | 'm' | 'l' } */
-    // export let size = "m";
-
     /** @type { boolean } */
     export let mobileCenter = true;
 </script>

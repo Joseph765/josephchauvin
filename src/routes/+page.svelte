@@ -1,14 +1,12 @@
 <script>
+	import { Divider } from "$lib/components";
     import Nav from "./Nav.svelte";
     import Hero from "./Hero.svelte";
-    import DemoReel from "./DemoReel.svelte";
-    import About from "./About.svelte";
-    import Footer from "./Footer.svelte";
-    import Contact from "./Contact.svelte";
     import SFXPacks from "./SFXPacks.svelte";
     import CustomSFX from "./CustomSFX.svelte";
     import Testimonials from "./Testimonials.svelte";
-	import { Divider } from "$lib/components";
+    import About from "./About.svelte";
+    import Footer from "./Footer.svelte";
 </script>
 
 <svelte:head>

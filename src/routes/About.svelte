@@ -38,7 +38,6 @@
         max-width: 100%;
         margin: auto;
         border-radius: 2px;
-        /* max-height: 600px; */
     }
 
     @media only screen and (max-width: 700px) { 
