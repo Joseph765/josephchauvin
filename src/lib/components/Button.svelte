@@ -47,7 +47,7 @@
 <style>
     .button-wrapper {
         position: relative;
-        height: 32px;
+        height: 43px;
         width: max-content;
         cursor: pointer;
     }
