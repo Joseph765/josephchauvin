@@ -7,6 +7,7 @@
     import Contact from "./Contact.svelte";
     import SFXPacks from "./SFXPacks.svelte";
     import CustomSFX from "./CustomSFX.svelte";
+    import Testimonials from "./Testimonials.svelte";
 	import { Divider } from "$lib/components";
 </script>
 
@@ -26,6 +27,8 @@
     <SFXPacks />
     <Divider />
     <CustomSFX />
+    <Divider />
+    <Testimonials />
     <Divider />
     <About />
     <Divider />

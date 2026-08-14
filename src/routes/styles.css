@@ -74,7 +74,7 @@ span {
     --red-11: #ff9592;
     --red-12: #ffd1d9;
 
-    --header-height: 81px;
+    --header-height: 93px;
 
     /* --v-color-background: var(--v-gray-1);
     --v-color-surface: var(--v-gray-2);
@@ -157,6 +157,7 @@ span {
 
     /* Border Radius */
     --v-radius: 9999px;
+	--v-radius-rounded: 48px;
 
 	/* Breakpoints */
 	--v-breakpoint-s: 20rem; /* 320px */

@@ -35,19 +35,15 @@
 
     p.is-align-start {
         text-align: start;
+        margin-right: auto;
     }
 
     p.is-align-end {
         text-align: end;
+        margin-left: auto;
     }
 
     p.is-weak {
         color: var(--v-color-text-weak);
-    }
-
-    @media only screen and (max-width: 1307px) {
-        p.mobile-center {
-            text-align: center;
-        }
     }
 </style>

@@ -3,21 +3,20 @@
 </script>
 
 <section id="customsfx">
-    <Flex direction="column" gap="s" style="padding-bottom: 2rem;">
-        <Heading>Custom SFX</Heading>
-        <Text align="center" variant="weak">$20/SFX</Text>
-        <Text>Need sounds made specifically for your game? I create custom SFX tailored to your game's style and needs.</Text>
-    </Flex>
     <Container>
+        <Flex direction="column" gap="s" style="padding-bottom: 2rem;">
+            <Heading>Custom SFX</Heading>
+            <Text align="center" variant="weak" style="max-inline-size: 100%;">$20 Per SFX</Text>
+            <Text>Need sounds made specifically for your game? I create custom SFX tailored to your game's style and needs.</Text>
+        </Flex>
         <Flex gap="m" direction="column">
-            <!-- <Text>How It Works</Text> -->
             <Heading size="s" align="start">How It Works</Heading>
             <ul>
                 <li>
-                    <Text>Email me at <a href="mailto:joseph.chauvin102@gmail.com">joseph.chauvin102@gmail.com</a></Text>
+                    <Text align="start">Email me at <a href="mailto:joseph.chauvin102@gmail.com">joseph.chauvin102@gmail.com</a></Text>
                 </li>
                 <li>
-                    <Text>Send me your game, references, and a description of the sounds you're looking for.</Text>
+                    <Text align="start">Send me your game, references, and a description of the sounds you're looking for.</Text>
                 </li>
                 <li>
                     <Text>I'll create an initial draft and work with you through feedback and revisions.</Text>
@@ -39,6 +38,7 @@
         padding-block: 4rem;
         color: var(--v-color-text);
         background-color: var(--v-color-background);
+        scroll-margin-top: var(--header-height);
     }
 
     ul {

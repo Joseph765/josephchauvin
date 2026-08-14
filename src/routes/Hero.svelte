@@ -6,21 +6,18 @@
 <section id="hero">
     <Container size="xl">
         <Flex direction="column" gap="l" align="center">
-            <!-- <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio-2.jpg" /> -->
             <iframe style="display: block; max-width: 1000px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/KvZztfj-aA4?si=mCjWf5R-va-2KVx-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <Text>Hello! I'm Joseph, a video game sound designer. I create immersive and satisfying sound effects that bring games to life.</Text>
-            <!-- <Text>I'm passionate about creating immersive audio for games. I especially love working with synthesizers and designing sci-fi sounds, futuristic ambiences, and powerful effects.</Text>
-            <Text>When I'm not designing sounds or playing video games, I love spending time with my family.</Text> -->
-            <div class="buttons">
+            <Text align="center">Hello! I'm Joseph, a video game sound designer. I create immersive and satisfying sound effects that bring games to life.</Text>
+            <!-- <div class="buttons">
                 <Button variant="secondary" href="mailto:joseph.chauvin102@gmail.com" size="l" expanded>
-                    <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/></svg>
                     SFX Packs
                 </Button>
                 <Button href="mailto:joseph.chauvin102@gmail.com" size="l" expanded>
-                    <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wand-icon lucide-wand"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>
                     Custom SFX
                 </Button>
-            </div>
+            </div> -->
         </Flex>
     </Container>
 </section>
