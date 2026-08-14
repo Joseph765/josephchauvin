@@ -4,16 +4,29 @@
 </script>
 
 <nav>
-    <a class="logo" href="/">Joseph Chauvin</a>
+    <a class="logo" href="/">
+        Joseph Chauvin
+        <span class="subtitle">Video Game Sound Designer</span>
+    </a>
     <ul class="desktop-links">
         <li>
-            <Button href="mailto:joseph.chauvin102@gmail.com" size="l">
-                <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
-                Contact
-            </Button>
+            <a href="#sfxpacks">SFX Packs</a>
         </li>
+        <li>
+            <a href="#customsfx">Custom SFX</a>
+        </li>
+        <li>
+            <a href="#testimonials">Testimonials</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <!-- <Button href="mailto:joseph.chauvin102@gmail.com" size="l">
+            <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            Contact
+        </Button> -->
     </ul>
-    <!-- <button aria-label="Navigation menu" class="hamburger" onclick={() => showMenu = !showMenu}>
+    <button aria-label="Navigation menu" class="hamburger" onclick={() => showMenu = !showMenu}>
         {#if showMenu}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         {:else}
@@ -24,16 +37,33 @@
         <div class="mobile-menu">
             <ul class="mobile-links">
                 <li>
-                    <a href="#demoreel" onclick={() => showMenu = false}>
-                        Demo Reel
+                    <a href="#sfxpacks" onclick={() => showMenu = false}>
+                        SFX Packs
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>Contact</a>
+                    <a href="#customsfx" onclick={() => showMenu = false}>
+                        Custom SFX
+                    </a>
                 </li>
+                <li>
+                    <a href="#customsfx" onclick={() => showMenu = false}>
+                        Testimonials
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" onclick={() => showMenu = false}>
+                        About
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="mailto:joseph.chauvin102@gmail.com" onclick={() => showMenu = false}>
+                        Contact
+                    </a>
+                </li> -->
             </ul>
         </div>
-    {/if} -->
+    {/if}
 </nav>
 
 <style>
@@ -47,7 +77,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .hamburger {
@@ -121,6 +151,17 @@
         line-height: 1;
         letter-spacing: var(--v-letter-spacing-3xl);
         /* padding: 0 var(--v-space-m) var(--v-space-m) var(--v-space-m); */
+    }
+
+    .subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: var(--v-space-s);
+        font-size: var(--v-font-size-l);
+        font-weight: 400;
+        text-align: end;
+        color: var(--v-color-text-weak);
+        line-height: var(--v-line-height-l);
     }
 
     @media only screen and (max-width: 700px) {

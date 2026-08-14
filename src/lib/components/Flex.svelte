@@ -5,7 +5,7 @@
     /** @type { 'row' | 'column' } */
     export let direction = "row";
 
-    /** @type { 's' | 'm' | 'l' | 'xl' } */
+    /** @type { 'xs' | 's' | 'm' | 'l' | 'xl' } */
     export let gap = "m"
 
     /** @type { 'start' | 'center' } */
@@ -13,9 +13,12 @@
 
     /** @type { 'start' | 'center' } */
     export let align = "start"
+
+    /** @type { boolean } */
+    export let wraps = false;
 </script>
 
-<div style={style} class="flex is-direction-{direction} has-gap-{gap} is-justify-{justify} is-align-{align}">
+<div style={style} class="flex is-direction-{direction} has-gap-{gap} is-justify-{justify} is-align-{align} {wraps ? "wraps" : ""}">
     <slot />
 </div>
 
@@ -27,6 +30,10 @@
 
     .flex.is-direction-column {
         flex-direction: column;
+    }
+
+    .flex.has-gap-xs {
+        gap: var(--space-xs);
     }
 
     .flex.has-gap-s {
@@ -51,5 +58,9 @@
 
     .flex.is-align-center {
         align-items: center;
+    }
+
+    .flex.wraps {
+        flex-wrap: wrap;
     }
 </style>

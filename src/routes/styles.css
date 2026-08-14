@@ -179,6 +179,20 @@ span {
 	--v-gray-11: #b5b2bc;
 	--v-gray-12: #eeeef0;
 
+	/* Slate */
+	/* --v-gray-1: #111113;
+	--v-gray-2: #18191b;
+	--v-gray-3: #212225;
+	--v-gray-4: #272a2d;
+	--v-gray-5: #2e3135;
+	--v-gray-6: #363a3f;
+	--v-gray-7: #43484e;
+	--v-gray-8: #5a6169;
+	--v-gray-9: #696e77;
+	--v-gray-10: #777b84;
+	--v-gray-11: #b0b4ba;
+	--v-gray-12: #edeef0; */
+
     /* Red */
 	--v-danger-1: #191111;
 	--v-danger-2: #201314;

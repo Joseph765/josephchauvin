@@ -1,11 +1,10 @@
 <script>
-    import { Section, Heading } from "$lib/components";
-	import Text from "$lib/components/Text.svelte";
+    import { Section, Heading, Button, Container, Flex, Text, Divider } from "$lib/components";
 
     let showStudioPhoto = true;
 </script>
 
-<section id="about">
+<!-- <section id="about">
     <div class="container is-size-l">
         <Heading style="padding-bottom: 2rem; color: var(--v-gray-1);">About</Heading>
         <div class="split">
@@ -29,6 +28,26 @@
             </div>
         </div>
     </div>
+</section> -->
+
+<section>
+    <Heading style="padding-bottom: 2rem;">About</Heading>
+    <Container>
+        <Flex direction="column" gap="l" align="center">
+            <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio-2.jpg" />
+            <Text>Hello! I'm Joseph, a video game sound designer. I create immersive, satisfying sound for games—from UI and gameplay SFX to full audio redesigns.</Text>
+            <!-- <div class="buttons">
+                <Button variant="secondary" href="mailto:joseph.chauvin102@gmail.com" size="l" expanded>
+                    <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    SFX Packs
+                </Button>
+                <Button href="mailto:joseph.chauvin102@gmail.com" size="l" expanded>
+                    <svg slot="start" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    Custom SFX
+                </Button>
+            </div> -->
+        </Flex>
+    </Container>
 </section>
 
 
@@ -37,85 +56,21 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        /* height: 100vh; */
-        /* background: var(--v-gray-12); */
         padding-block: 4rem;
+        color: var(--v-color-text);
+        background-color: var(--v-color-background);
     }
-    
+
     img {
-        height: 338px;
         max-width: 100%;
         margin: auto;
         border-radius: 2px;
+        max-height: 600px;
     }
 
-    .container {
-        max-inline-size: 900px;
-        margin: auto;
-        padding-inline: 2rem;
-    }
-
-    .container.is-size-l {
-        max-inline-size: 1250px;
-    }
-
-    .split {
+    .buttons {
         display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        align-items: start;
-        /* justify-content: center; */
-    }
-
-    .button-group {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-block-start: 1rem;
-    }
-
-    button {
-        /* background: var(--v-gray-4); */
-        border: none;
-        border-radius: 3px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        height: 32px;
-    }
-
-    @media only screen and (max-width: 1307px) {
-        .img-wrapper {
-            width: 100%;
-        }
-
-        img {
-            height: auto;
-            width: 100%;
-            max-width: 700px;
-        }
-
-        .button-group {
-            max-width: 700px;
-            margin: auto;
-        }
-
-        .split {
-            flex-direction: column;
-            gap: none;
-            justify-content: center;
-        }
-
-        .text-content {
-            margin: auto;
-        }
-
-    }
-
-    @media (pointer: fine) {
-        button:hover {
-            background: var(--v-gray-5)
-        }
+        width: 100%;
+        gap: var(--v-space-m);
     }
 </style>

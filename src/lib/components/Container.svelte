@@ -18,4 +18,8 @@
     .container.is-size-l {
         max-inline-size: 1200px;
     }
+
+    .container.is-size-xl {
+        max-inline-size: 1584px;
+    }
 </style>

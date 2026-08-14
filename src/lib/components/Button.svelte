@@ -15,7 +15,7 @@
     export let href = "";
 </script>
 
-<div class="button-wrapper {expanded ? "is-expanded" : undefined}">
+<div class="button-wrapper {expanded ? "is-expanded" : undefined} is-{variant}">
     {#if href}
         <a {href} class="button-overlay is-size-{size}">
             <slot name="start" />
@@ -52,6 +52,10 @@
         cursor: pointer;
     }
 
+    .button-wrapper.is-secondary {
+        background: var(--v-color-surface);
+    }
+ 
     .button-wrapper.is-expanded,
     .button-wrapper.is-expanded .button-overlay,
     .button-wrapper.is-expanded .button {

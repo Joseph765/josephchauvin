@@ -5,6 +5,7 @@
     import About from "./About.svelte";
     import Footer from "./Footer.svelte";
     import Contact from "./Contact.svelte";
+    import SFXPacks from "./SFXPacks.svelte";
 	import { Divider } from "$lib/components";
 </script>
 
@@ -21,7 +22,10 @@
     <Nav />
     <Hero />
     <Divider />
-    <DemoReel />
+    <SFXPacks />
+    <Divider />
+    <!-- <DemoReel /> -->
+    <About />
     <Divider />
     <Footer />
 </div>
