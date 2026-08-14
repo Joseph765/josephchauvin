@@ -13,7 +13,7 @@
             <Heading size="s" align="start">How It Works</Heading>
             <ul>
                 <li>
-                    <Text align="start">Email me at <a href="mailto:joseph.chauvin102@gmail.com">joseph.chauvin102@gmail.com</a></Text>
+                    <Text align="start">Email me at <a href="mailto:joseph.chauvin102@gmail.com">joseph.chauvin102@gmail.com.</a></Text>
                 </li>
                 <li>
                     <Text align="start">Send me your game, references, and a description of the sounds you're looking for.</Text>
