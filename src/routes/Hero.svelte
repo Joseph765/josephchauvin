@@ -27,7 +27,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-block: 4rem;
+        padding-block: 6rem 4rem;
         color: var(--v-color-text);
         background-color: var(--v-color-background);
         /* min-height: 100vh; */
@@ -48,7 +48,7 @@
 
     @media only screen and (max-width: 700px) { 
         section {
-            padding-block: 4rem 2rem;
+            padding-block: 6rem 2rem;
         }
     }
 </style>
