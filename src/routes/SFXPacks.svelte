@@ -2,13 +2,13 @@
     import { Section, Heading, Button, Container, Flex, Text } from "$lib/components";
 </script>
 
-<section>
+<section id="sfxpacks">
     <Flex direction="column" style="padding-bottom: 2rem;">
         <Heading>SFX Packs</Heading>
         <Text>A collection of ready-to-use sound effects for your game.</Text>
     </Flex>
     <Container size="xl">
-        <Flex wraps gap="xl">
+        <Flex wraps gap="xl" justify="center">
             <Flex direction="column" gap="m" align="center">
                 <a href="https://josephchauvin.itch.io/retro-action-music-pack">
                     <img alt="Retro Action Music Pack" src="/retroactionmusicpack.png" />

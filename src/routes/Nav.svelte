@@ -47,7 +47,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#customsfx" onclick={() => showMenu = false}>
+                    <a href="#testimonials" onclick={() => showMenu = false}>
                         Testimonials
                     </a>
                 </li>

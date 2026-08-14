@@ -4,10 +4,10 @@
 </script>
 
 <section id="hero">
-    <Container>
+    <Container size="xl">
         <Flex direction="column" gap="l" align="center">
             <!-- <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio-2.jpg" /> -->
-            <iframe style="display: block; max-width: 800px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/KvZztfj-aA4?si=mCjWf5R-va-2KVx-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe style="display: block; max-width: 1000px; width: calc(100vw - 5rem); height: auto; aspect-ratio: 16/9; padding-inline: 0rem;" src="https://www.youtube.com/embed/KvZztfj-aA4?si=mCjWf5R-va-2KVx-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <Text>Hello! I'm Joseph, a video game sound designer. I create immersive and satisfying sound effects that bring games to life.</Text>
             <!-- <Text>I'm passionate about creating immersive audio for games. I especially love working with synthesizers and designing sci-fi sounds, futuristic ambiences, and powerful effects.</Text>
             <Text>When I'm not designing sounds or playing video games, I love spending time with my family.</Text> -->
@@ -33,6 +33,7 @@
         padding-block: 4rem;
         color: var(--v-color-text);
         background-color: var(--v-color-background);
+        /* min-height: 100vh; */
     }
 
     img {
