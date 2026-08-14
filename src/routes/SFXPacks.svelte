@@ -75,4 +75,10 @@
             box-shadow: 0 0 6px 4px var(--v-color-text);
         }
     }
+
+    @media only screen and (max-width: 700px) { 
+        section {
+            padding-block: 2rem;
+        }
+    }
 </style>

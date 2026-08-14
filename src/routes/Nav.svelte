@@ -159,7 +159,7 @@
         gap: var(--v-space-s);
         font-size: var(--v-font-size-l);
         font-weight: 400;
-        text-align: end;
+        text-align: start;
         color: var(--v-color-text-weak);
         line-height: var(--v-line-height-l);
     }

@@ -45,4 +45,10 @@
         width: 100%;
         gap: var(--v-space-m);
     }
+
+    @media only screen and (max-width: 700px) { 
+        section {
+            padding-block: 4rem 2rem;
+        }
+    }
 </style>

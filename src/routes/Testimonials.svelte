@@ -49,4 +49,10 @@
         padding: var(--v-space-xl);
         max-width: 585px;
     }
+
+    @media only screen and (max-width: 700px) { 
+        section {
+            padding-block: 2rem;
+        }
+    }
 </style>

@@ -51,4 +51,10 @@
         color: var(--v-color-text);
         /* font-size: 1rem; */
     }
+
+    @media only screen and (max-width: 700px) { 
+        section {
+            padding-block: 2rem;
+        }
+    }
 </style>
