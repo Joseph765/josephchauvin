@@ -161,7 +161,7 @@
         font-weight: 400;
         text-align: start;
         color: var(--v-color-text-weak);
-        line-height: var(--v-line-height-l);
+        line-height: var(--v-line-height-s);
     }
 
     @media only screen and (max-width: 700px) {
