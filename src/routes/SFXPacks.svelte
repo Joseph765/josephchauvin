@@ -66,7 +66,9 @@
         letter-spacing: var(--v-letter-spacing-l);
         line-height: var(--v-line-height-l);
         background-color: var(--v-color-surface);
-        user-select: none;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and Edge */
+        user-select: none; /* Standard syntax */
     }
 
     @media (pointer: fine) { 
