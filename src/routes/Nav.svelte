@@ -9,12 +9,12 @@
         <span class="subtitle">Video Game Sound Designer</span>
     </a>
     <ul class="desktop-links">
-        <li>
+        <!-- <li>
             <a href="#sfxpacks">SFX Packs</a>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="#testimonials">Testimonials</a>
-        </li>
+        </li> -->
         <li>
             <a href="#about">About</a>
         </li>
@@ -32,16 +32,16 @@
     {#if showMenu}
         <div class="mobile-menu">
             <ul class="mobile-links">
-                <li>
+                <!-- <li>
                     <a href="#sfxpacks" onclick={() => showMenu = false}>
                         SFX Packs
                     </a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="#testimonials" onclick={() => showMenu = false}>
                         Testimonials
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#about" onclick={() => showMenu = false}>
                         About
