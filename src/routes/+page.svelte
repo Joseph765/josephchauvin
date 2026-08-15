@@ -6,6 +6,7 @@
     import CustomSFX from "./CustomSFX.svelte";
     import Testimonials from "./Testimonials.svelte";
     import About from "./About.svelte";
+    import MyProcess from "./MyProcess.svelte";
     import Footer from "./Footer.svelte";
 </script>
 
@@ -29,6 +30,8 @@
     <Testimonials />
     <Divider />
     <About />
+    <Divider />
+    <MyProcess />
     <Divider />
     <Footer />
 </div>

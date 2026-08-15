@@ -18,6 +18,9 @@
         <li>
             <a href="#about">About</a>
         </li>
+        <li>
+            <a href="#myprocess">My Process</a>
+        </li>
         <Button href="#customsfx" size="l">
             Custom SFX
         </Button>
@@ -45,6 +48,11 @@
                 <li>
                     <a href="#about" onclick={() => showMenu = false}>
                         About
+                    </a>
+                </li>
+                <li>
+                    <a href="#myprocess" onclick={() => showMenu = false}>
+                        My Process
                     </a>
                 </li>
                 <li>
