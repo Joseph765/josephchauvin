@@ -24,7 +24,7 @@
     footer {
         max-inline-size: 900px;
         margin: auto;
-        padding: 0 2rem 1rem 2rem;
+        padding: 0 2rem 2rem 2rem;
     }
 
     span {

@@ -15,7 +15,7 @@
                     <Text align="end">— Developer Name, Game Name</Text>
                 </Flex>
             </div>
-            <div class="card">
+            <!-- <div class="card">
                 <Flex direction="column" gap="m" align="center">
                     <Text>"Joseph was great to work with. He understood exactly what we were looking for and brought the sounds to life." </Text>
                     <Text align="end">— Developer Name, Game Name</Text>
@@ -26,7 +26,7 @@
                     <Text>"Joseph was great to work with. He understood exactly what we were looking for and brought the sounds to life." </Text>
                     <Text align="end">— Developer Name, Game Name</Text>
                 </Flex>
-            </div>
+            </div> -->
         </Flex>
     </Container>
 </section>

@@ -8,7 +8,7 @@
             <Heading>SFX Packs</Heading>
             <Text style="max-inline-size: 100%;" align="center">A collection of ready-to-use sound effects for your game.</Text>
         </Flex>
-        <Flex wraps gap="xl" justify="center">
+        <div class="grid">
             <Flex direction="column" gap="m" align="center">
                 <a href="https://josephchauvin.itch.io/retro-action-music-pack">
                     <img alt="Retro Action Music Pack" src="/retroactionmusicpack.png" />
@@ -18,34 +18,10 @@
                     <Text align="center">$9.99 USD</Text>
                 </Flex>
             </Flex>
-            <Flex direction="column" gap="m" align="center">
-                <a href="https://josephchauvin.itch.io/retro-action-music-pack">
-                    <img alt="Retro Action Music Pack" src="/retroactionmusicpack.png" />
-                </a>
-                <Flex direction="column" gap="xs" align="center">
-                    <Text align="center">Retro Action Music Pack</Text>
-                    <Text align="center">$9.99 USD</Text>
-                </Flex>
-            </Flex>
-            <Flex direction="column" gap="m" align="center">
-                <a href="https://josephchauvin.itch.io/retro-action-music-pack">
-                    <img alt="Retro Action Music Pack" src="/retroactionmusicpack.png" />
-                </a>
-                <Flex direction="column" gap="xs" align="center">
-                    <Text align="center">Retro Action Music Pack</Text>
-                    <Text align="center">$9.99 USD</Text>
-                </Flex>
-            </Flex>
-            <Flex direction="column" gap="m" align="center">
-                <a href="https://josephchauvin.itch.io/retro-action-music-pack">
-                    <img alt="Retro Action Music Pack" src="/retroactionmusicpack.png" />
-                </a>
-                <Flex direction="column" gap="xs" align="center">
-                    <Text align="center">Retro Action Music Pack</Text>
-                    <Text align="center">$9.99 USD</Text>
-                </Flex>
-            </Flex>
-        </Flex>
+            <div class="coming-soon">Coming Soon</div>
+            <div class="coming-soon">Coming Soon</div>
+            <div class="coming-soon">Coming Soon</div>
+        </div>
     </Container>
 </section>
 
@@ -61,12 +37,35 @@
         scroll-margin-top: var(--header-height);
     }
 
-    img {
-        max-width: 100%;
-        margin: auto;
-        border-radius: 2px;
-        max-height: 332px;
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 281px);
+        gap: var(--space-xl);
+        width: 100%;
+        justify-content: center;
+    }
+
+    img,
+    .coming-soon {
+        height: 281px;
+        min-width: 281px;
         border-radius: var(--v-radius-rounded);
+    }
+
+    img {
+        max-height: 332px;
+        height: 281px;
+    }
+
+    .coming-soon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--v-color-border);
+        font-size: var(--v-font-size-l);
+        font-family: var(--v-font);
+        letter-spacing: var(--v-letter-spacing-l);
+        line-height: var(--v-line-height-l);
     }
 
     @media (pointer: fine) { 
