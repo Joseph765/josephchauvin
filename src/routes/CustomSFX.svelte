@@ -4,10 +4,13 @@
 
 <section id="customsfx">
     <Container>
-        <Flex direction="column" gap="s" style="padding-bottom: 2rem;">
+        <Flex direction="column" gap="" style="padding-bottom: 2rem;">
             <Heading>Custom SFX</Heading>
-            <Text align="center" variant="weak" style="max-inline-size: 100%;">$20 Per SFX</Text>
             <Text>Need sounds made specifically for your game? I create custom SFX tailored to your game's style and needs.</Text>
+            <div class="banner">
+                $20 Per SFX
+                <!-- <Text align="center" style="max-inline-size: 100%;">$20 Per SFX</Text> -->
+            </div>
         </Flex>
         <Flex gap="m" direction="column">
             <Heading size="s" align="start">How It Works</Heading>
@@ -39,6 +42,19 @@
         color: var(--v-color-text);
         background-color: var(--v-color-background);
         scroll-margin-top: var(--header-height);
+    }
+
+    .banner {
+        padding: var(--v-space-m);
+        border: 1px solid var(--v-accent-1);
+        border-radius: var(--v-radius-rounded);
+        background-color: var(--v-gray-2);
+        /* color: var(--v-accent-12); */
+        text-align: center;
+        font-family: var(--v-font);
+        font-size: var(--v-font-size-xl);
+        font-weight: var(--v-font-weight-regular);
+        letter-spacing: var(--v-letter-spacing-xl);
     }
 
     ul {

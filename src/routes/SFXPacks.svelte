@@ -61,11 +61,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid var(--v-color-border);
         font-size: var(--v-font-size-l);
         font-family: var(--v-font);
         letter-spacing: var(--v-letter-spacing-l);
         line-height: var(--v-line-height-l);
+        background-color: var(--v-color-surface);
+        user-select: none;
     }
 
     @media (pointer: fine) { 

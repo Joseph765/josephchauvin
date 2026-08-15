@@ -37,7 +37,7 @@
     img {
         max-width: 100%;
         margin: auto;
-        border-radius: 2px;
+        border-radius: var(--v-radius-rounded);
     }
 
     @media only screen and (max-width: 700px) { 

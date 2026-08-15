@@ -36,6 +36,10 @@
         width: 100%;
     }
 
+    iframe {
+        border-radius: var(--v-radius-rounded);
+    }
+
     @media only screen and (max-width: 700px) { 
         section {
             padding-block: 2rem;
