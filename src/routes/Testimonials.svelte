@@ -43,8 +43,6 @@
     }
 
     .card {
-        /* box-shadow: 1px 1px 0 1px var(--v-gray-2); */
-        /* border: 1px solid var(--v-gray-8); */
         background-color: var(--v-gray-2);
         border-radius: var(--v-radius-rounded);
         padding: var(--v-space-xl);

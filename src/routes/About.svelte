@@ -8,7 +8,7 @@
     <Heading style="padding-bottom: 2rem;">About</Heading>
     <Container>
         <Flex direction="column" gap="l" align="center">
-            <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio-2.jpg" />
+            <img alt="Joseph Chauvin in his home studio" src="/me-in-the-studio.jpg" />
             <Text align="center">
                 I'm Joseph Chauvin, a video game sound designer based in Houston, Texas. I've always been drawn to video games and the worlds they create. The sounds of those worlds have always been a huge part of what made them feel real and memorable to me.
             </Text>

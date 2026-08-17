@@ -11,11 +11,11 @@
         <div class="grid">
             <Flex direction="column" gap="m" align="center">
                 <a href="https://josephchauvin.itch.io/retro-action-music-pack">
-                    <img alt="Retro Action Music Pack" src="/retroactionmusicpack.png" />
+                    <img alt="Sci-Fi UI Sound Pack" src="/Mockup.jpg" />
                 </a>
                 <Flex direction="column" gap="xs" align="center">
-                    <Text align="center">Retro Action Music Pack</Text>
-                    <Text align="center">$9.99 USD</Text>
+                    <Text align="center">Sci-Fi UI</Text>
+                    <Text align="center">$12.99 USD</Text>
                 </Flex>
             </Flex>
             <div class="coming-soon">Coming Soon</div>

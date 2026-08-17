@@ -46,10 +46,9 @@
 
     .banner {
         padding: var(--v-space-m);
-        border: 1px solid var(--v-accent-1);
+        /* border: 1px solid var(--v-accent-1); */
         border-radius: var(--v-radius-rounded);
         background-color: var(--v-gray-2);
-        /* color: var(--v-accent-12); */
         text-align: center;
         font-family: var(--v-font);
         font-size: var(--v-font-size-xl);
